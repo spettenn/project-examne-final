@@ -9,7 +9,6 @@ const cardContainer = {
 	display: 'flex',
 	flexDirection: 'column',
 };
-
 const cardHome = {
 	width: '80%',
 	display: 'flex',
