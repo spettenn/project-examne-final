@@ -1,6 +1,17 @@
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faCartShopping,
+	faMobileScreenButton,
+} from '@fortawesome/free-solid-svg-icons';
+
+const cardContainer = {
+	display: 'flex',
+	flexDirection: 'column',
+};
+
 const cardHome = {
-	width: '49%',
+	width: '80%',
 	display: 'flex',
 	flexDirection: 'column',
 	backgroundColor: 'white',
@@ -8,9 +19,10 @@ const cardHome = {
 	border: '1px solid #8C8C8C',
 	borderRadius: '3px',
 	padding: '10px',
+	margin: 'auto',
 };
 const cardNett = {
-	width: '100%',
+	width: '80%',
 	display: 'flex',
 	flexDirection: 'row',
 	backgroundColor: 'white',
@@ -18,6 +30,7 @@ const cardNett = {
 	border: '1px solid #8C8C8C',
 	borderRadius: '3px',
 	padding: '10px',
+	margin: 'auto',
 };
 const cardButton = {
 	color: 'white',
@@ -29,6 +42,14 @@ const cardButton = {
 	borderRadius: '2px',
 	padding: '10px',
 };
+const cardText = {
+	fontSize: '20px',
+};
+const titles = {
+	fontSize: '36px',
+	color: '#2F4858',
+	textAlign: 'center',
+};
 
 const PlayerSection = () => (
 	<section
@@ -37,18 +58,11 @@ const PlayerSection = () => (
 			flexDirection: 'column',
 			minWidth: '100vh',
 		}}>
-		<h2 style={{ color: '#2F4858', textAlign: 'center' }}>For Spillere</h2>
-		<div
-			style={{
-				display: 'flex',
-				flexDirection: 'row',
-				justifyContent: 'space-between',
-			}}>
+		<h2 style={titles}>For Spillere</h2>
+		<div style={cardContainer}>
 			<div style={cardHome}>
-				<h3 style={{ color: '#2F4858', textAlign: 'center' }}>
-					LG50 “Hagemålet”
-				</h3>
-				<p>
+				<h3 style={titles}>LG50 “Hagemålet”</h3>
+				<p style={cardText}>
 					Det perfekte fotballmålet for de som elsker å spille fotball!
 					Funtoplay LG50 Original er et norsk designet produkt som passer
 					perfekt for fotballspill i hagen, på løkka, eller på treningsfeltet
@@ -65,8 +79,8 @@ const PlayerSection = () => (
 				</div>
 			</div>
 			<div style={cardHome}>
-				<h3 style={{ color: '#2F4858', textAlign: 'center' }}>LG100</h3>
-				<p>
+				<h3 style={titles}>LG100</h3>
+				<p style={cardText}>
 					Det perfekte fotballmålet for de som elsker å spille fotball!
 					Funtoplay LG100 Original er et norsk designet produkt som passer
 					perfekt til fotballklubber som ønsker å benytte seg av
@@ -86,18 +100,20 @@ const PlayerSection = () => (
 		<div style={cardNett}>
 			<div></div>
 			<div>
-				<h3 style={{ color: '#2F4858', textAlign: 'center' }}>LG100</h3>
+				<h3 style={titles}>Nett</h3>
 				<p>
 					På tide å bytte nett? Vi tilbyr nett i ulike farger med eller uten
 					logo
 				</p>
 				<div>
 					<div>
-						<AccessAlarm />
+						<FontAwesomeIcon icon={faMobileScreenButton} />
 						<p>Fredrik@funtoplay.no</p>
 					</div>
-
-					<p>Se våre priser & sortement</p>
+					<div>
+						<FontAwesomeIcon icon={faCartShopping} />
+						<p>Se våre priser & sortement</p>
+					</div>
 				</div>
 			</div>
 		</div>
