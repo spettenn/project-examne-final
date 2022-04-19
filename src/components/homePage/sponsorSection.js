@@ -1,7 +1,15 @@
 const SponsorSection = () => (
 	<div style={{ display: 'flex', flexDirection: 'column' }}>
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
-			<h2 style={{ fontSize: '36px', height: '1rem' }}>Sponsor?</h2>
+			<h2
+				style={{
+					fontSize: '36px',
+					height: '1rem',
+					textAlign: 'center',
+					color: '#2F4858',
+				}}>
+				Sponsor?
+			</h2>
 			<p style={{ fontSize: '20px' }}>
 				Ønsker du å sponse Norges bredde & toppfotball? Vi tilbyr enkel og
 				effektiv promotering av egen merkevare på våre populære fotballmål.
@@ -18,7 +26,11 @@ const SponsorSection = () => (
 					textAlign: 'center',
 					cursor: 'pointer',
 					border: 'none',
-					minWidth: '50px',
+					fontSize: '2rem',
+					paddingTop: '0.6rem',
+					paddingBottom: '0.6rem',
+					paddingLeft: '2rem',
+					paddingRight: '2rem',
 				}}>
 				Mere information
 			</button>
