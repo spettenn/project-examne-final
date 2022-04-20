@@ -4,13 +4,14 @@ import styles from '../styles/Home.module.css';
 import SponsorSection from '../src/components/homePage/sponsorSection.js';
 import PlayerSection from '../src/components/homePage/playerSection.js';
 import ClubSection from '../src/components/homePage/clubbSection.js';
-import { faColumns } from '@fortawesome/free-solid-svg-icons';
+import Nav from '../src/components/navigation/navigation.js';
 
 const mainLayout = {
 	display: 'flex',
 	flexDirection: 'column',
 	justifyContent: 'center',
 	padding: '0rem',
+	backgroundColor: '#ECECEC',
 };
 const sectionPadding = {
 	margin: 'auto',
@@ -25,6 +26,9 @@ export default function Home() {
 			</Head>
 
 			<main style={mainLayout}>
+				<section>
+					<Nav />
+				</section>
 				<section>
 					<SponsorSection />
 				</section>

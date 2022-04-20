@@ -16,7 +16,7 @@ const cardContainer = {
 };
 const cardHome = {
 	maxWidth: '450px',
-	maxHeight: '44rem',
+	maxHeight: '42rem',
 	width: '100%',
 	display: 'flex',
 	flexDirection: 'column',
@@ -101,7 +101,11 @@ const PlayerSection = () => (
 				</div>
 			</div>
 			<div style={cardHome}>
-				<Image src={cardImageTwo} alt='garde goal, fotball goal large size' />
+				<Image
+					src={cardImageTwo}
+					className='card_image_home'
+					alt='garde goal, fotball goal large size'
+				/>
 				<h3 style={titles}>LG100</h3>
 				<p style={cardText}>
 					Det perfekte fotballmålet for de som elsker å spille fotball!
@@ -131,7 +135,12 @@ const PlayerSection = () => (
 					logo
 				</p>
 				<div>
-					<div>
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'row',
+							paddingTop: '1rem',
+						}}>
 						<FontAwesomeIcon icon={faMobileScreenButton} />
 						<p>Fredrik@funtoplay.no</p>
 					</div>
