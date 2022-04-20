@@ -13,6 +13,7 @@ const cardContainer = {
 	display: 'flex',
 	flexDirection: 'row',
 	flexWrap: 'wrap',
+	justifyContent: 'center',
 };
 const cardHome = {
 	maxWidth: '450px',
@@ -28,9 +29,10 @@ const cardHome = {
 	margin: 'auto',
 	marginRight: '0.5rem',
 	marginLeft: '0.5rem',
+	marginBottom: '1rem',
 };
 const cardNett = {
-	maxWidth: '915px',
+	maxWidth: '922px',
 	display: 'flex',
 	flexDirection: 'row',
 	flexWrap: 'wrap',
@@ -38,9 +40,9 @@ const cardNett = {
 	boxShadow: '1px 3px 2px 0px rgba(183,199,75,0.75)',
 	border: '1px solid #8C8C8C',
 	borderRadius: '3px',
-	padding: '10px',
+	padding: '30px',
 	margin: 'auto',
-	marginTop: '1rem',
+	marginTop: '0rem',
 };
 const cardButton = {
 	color: '#70BF48',

@@ -1,5 +1,11 @@
 const SponsorSection = () => (
-	<div style={{ display: 'flex', flexDirection: 'column' }}>
+	<div
+		style={{
+			display: 'flex',
+			flexDirection: 'column',
+			paddingRight: '2%',
+			paddingLeft: '2%',
+		}}>
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
 			<h2
 				style={{
