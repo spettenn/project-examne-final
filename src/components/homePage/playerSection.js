@@ -10,7 +10,7 @@ const cardContainer = {
 	flexDirection: 'column',
 };
 const cardHome = {
-	width: '80%',
+	width: '90%',
 	display: 'flex',
 	flexDirection: 'column',
 	backgroundColor: 'white',
@@ -18,7 +18,7 @@ const cardHome = {
 	border: '1px solid #8C8C8C',
 	borderRadius: '3px',
 	padding: '10px',
-	margin: 'auto',
+	margin: '',
 };
 const cardNett = {
 	width: '80%',
@@ -29,14 +29,14 @@ const cardNett = {
 	border: '1px solid #8C8C8C',
 	borderRadius: '3px',
 	padding: '10px',
-	margin: 'auto',
+	margin: '',
 };
 const cardButton = {
-	color: 'white',
-	backgroundColor: '#70BF48',
+	color: '#70BF48',
+	backgroundColor: 'white',
 	textAlign: 'center',
 	cursor: 'pointer',
-	border: 'none',
+	border: '1px solid #70BF48',
 	minWidth: '50px',
 	borderRadius: '2px',
 	padding: '10px',
@@ -48,6 +48,10 @@ const titles = {
 	fontSize: '36px',
 	color: '#2F4858',
 	textAlign: 'center',
+};
+const nettStyle = {
+	display: 'flex',
+	flexDirection: 'row',
 };
 
 const PlayerSection = () => (
@@ -105,11 +109,11 @@ const PlayerSection = () => (
 					logo
 				</p>
 				<div>
-					<div>
+					<div style={nettStyle}>
 						<FontAwesomeIcon icon={faMobileScreenButton} />
 						<p>Fredrik@funtoplay.no</p>
 					</div>
-					<div>
+					<div style={nettStyle}>
 						<FontAwesomeIcon icon={faCartShopping} />
 						<p>Se våre priser & sortement</p>
 					</div>
