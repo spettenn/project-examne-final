@@ -108,6 +108,7 @@ const PlayerSection = () => (
 					className='card_image_home'
 					alt='garde goal, fotball goal large size'
 				/>
+
 				<h3 style={titles}>LG100</h3>
 				<p style={cardText}>
 					Det perfekte fotballmålet for de som elsker å spille fotball!

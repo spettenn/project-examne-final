@@ -1,9 +1,11 @@
+
 .navigation {
 	width: 100%;
+	margin: auto;
 	min-height: 50px;
 	height: fit-content;
 	display: flex;
-
+	flex-direction: row-reverse;
 
 }
 
@@ -17,11 +19,20 @@
 	overflow: hidden;
 	z-index: 1000;
 	transition: all 0.3s linear;
+	padding-top: 1rem;
 
 }
 .navigation ul li {
 	list-style-type: none;
-	padding-right: 10px;
+	padding-right: 2rem;
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+	
+}
+.cart_nav {
+	color: var(--secondary-color);
+	padding-right: 2rem;
+	margin: 1rem;
 }
 
 .hamburger {
@@ -37,11 +48,9 @@
 	width: 2rem;
 	height: 0.25rem;
 	border-radius: 10px;
-	background-color: black;
+	background-color: var(--secondary-color);
 	transform-origin: 1px;
 	transition: all 0.3s linear;
 	z-index: 100
 }
-
-	
 

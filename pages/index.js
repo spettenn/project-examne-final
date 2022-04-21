@@ -29,13 +29,13 @@ export default function Home() {
 				<section>
 					<Nav />
 				</section>
-				<section>
+				<section style={sectionPadding}>
 					<SponsorSection />
 				</section>
 				<section style={sectionPadding}>
 					<PlayerSection />
 				</section>
-				<section>
+				<section style={sectionPadding}>
 					<ClubSection />
 				</section>
 			</main>

@@ -5,6 +5,7 @@ const SponsorSection = () => (
 			flexDirection: 'column',
 			paddingRight: '2%',
 			paddingLeft: '2%',
+			maxWidth: '922px',
 		}}>
 		<div style={{ display: 'flex', flexDirection: 'column' }}>
 			<h2

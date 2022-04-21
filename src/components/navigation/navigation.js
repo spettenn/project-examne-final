@@ -2,6 +2,9 @@ import Hamburger from '../navigation/burger.js';
 import { useState } from 'react';
 import logo from '../../../public/localmedia/LogoNav.png';
 import Image from 'next/image';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Nav() {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -17,6 +20,11 @@ export default function Nav() {
 					<li>Produkter</li>
 					<li>Info</li>
 					<li>Kontakt oss</li>
+					<FontAwesomeIcon
+						className='cart_nav'
+						icon={faCartShopping}
+						alt='shopping cart'
+					/>
 				</ul>
 				<div className='hamburger' onClick={toggleHamburger}>
 					<Hamburger isOpen={hamburgerOpen} />
@@ -30,6 +38,7 @@ export default function Nav() {
 				.nav_container {
 					display: flex;
 					flex-direction: row-reverse;
+					max-width: 922px;
 				}
 				.hamburger {
 					display: none;
@@ -61,9 +70,12 @@ export default function Nav() {
 					li {
 						padding: 1rem;
 						font-size: 2rem;
+						border-bottom: 1px solid var(--secondary-color);
+						-webkit-box-shadow: 0px 1px 1px 0px #979797;
+						box-shadow: 0px 1px 1px 0px #979797;
 					}
 					.navigation {
-						display: flex;
+						flex-direction: row;
 					}
 					.nav_container {
 						display: flex;
