@@ -2,6 +2,8 @@
 @import './homepage/spillerSection.css';
 @import './homepage/navigation.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
 html,
 body {
 	padding: 0;
@@ -17,6 +19,12 @@ a {
 
 * {
 	
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
 }
 :root {
 	--secondary-color: #2f4858;

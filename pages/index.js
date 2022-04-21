@@ -5,6 +5,12 @@ import SponsorSection from '../src/components/homePage/sponsorSection.js';
 import PlayerSection from '../src/components/homePage/playerSection.js';
 import ClubSection from '../src/components/homePage/clubbSection.js';
 import Nav from '../src/components/navigation/navigation.js';
+import Product from '../src/components/productFetch';
+import axios from 'axios';
+
+/*axios.get('http://localhost:1337/api/products').then((response) => {
+	console.log(response);
+});*/
 
 const mainLayout = {
 	display: 'flex',
@@ -35,7 +41,7 @@ export default function Home() {
 				<section style={sectionPadding}>
 					<PlayerSection />
 				</section>
-				<section style={sectionPadding}>
+				<section>
 					<ClubSection />
 				</section>
 			</main>

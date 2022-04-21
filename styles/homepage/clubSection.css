@@ -1,4 +1,6 @@
 .klubb_section {
     min-height: 100vh;
     background-color: var(--secondary-color);
+    z-index: 999999;
+    height: fit-content;
 }
