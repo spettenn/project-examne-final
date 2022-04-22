@@ -2,6 +2,7 @@ import Image from 'next/image';
 import klubbBanner from '../../../public/localmedia/klubbGoals.png';
 import clubCarImageOne from '../../../public/localmedia/pakke.png';
 import clubCarImageTwo from '../../../public/localmedia/balkan.png';
+import YoutubeEmbed from '../../modules/youTubeModal.js';
 
 const clubCard = {
 	display: 'flex',
@@ -111,7 +112,9 @@ const ClubSection = () => (
 				</div>
 				<button style={inforBtn}>Mere information</button>
 			</div>
-			<div></div>
+			<div>
+				<YoutubeEmbed embedId='QbeZkLHfnJY' />
+			</div>
 		</div>
 	</section>
 );
