@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import react from 'react';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import SponsorSection from '../src/components/homePage/sponsorSection.js';
@@ -7,6 +8,7 @@ import ClubSection from '../src/components/homePage/clubbSection.js';
 import Nav from '../src/components/navigation/navigation.js';
 import Product from '../src/components/productFetch';
 import axios from 'axios';
+import Banner from '../src/components/homePage/homepageBanner';
 
 /*axios.get('http://localhost:1337/api/products').then((response) => {
 	console.log(response);
@@ -32,16 +34,18 @@ export default function Home() {
 			</Head>
 
 			<main style={mainLayout}>
-				<section>
-					<Nav />
+				<Nav />
+				<section className='banner'>
+					<Banner />
 				</section>
+
 				<section style={sectionPadding}>
 					<SponsorSection />
 				</section>
-				<section style={sectionPadding}>
+				<section id='forSpillere' style={sectionPadding}>
 					<PlayerSection />
 				</section>
-				<section>
+				<section id='forKlubber'>
 					<ClubSection />
 				</section>
 			</main>

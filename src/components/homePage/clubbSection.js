@@ -66,7 +66,6 @@ const ClubSection = () => (
 			}}>
 			<p
 				style={{
-					margin: 'auto',
 					fontSize: '1.1rem',
 				}}>
 				I sammarbeid med NFF “Utstyrsordningen”, kan klubben søke om å få igjen
@@ -112,10 +111,8 @@ const ClubSection = () => (
 				</div>
 				<button style={inforBtn}>Mere information</button>
 			</div>
-			<div>
-				<YoutubeEmbed embedId='QbeZkLHfnJY' />
-			</div>
 		</div>
+		<YoutubeEmbed embedId='QbeZkLHfnJY' />
 	</section>
 );
 

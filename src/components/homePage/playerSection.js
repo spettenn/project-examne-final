@@ -17,8 +17,7 @@ const cardContainer = {
 };
 const cardHome = {
 	maxWidth: '450px',
-	maxHeight: '42rem',
-	width: '100%',
+	maxHeight: '35rem',
 	display: 'flex',
 	flexDirection: 'column',
 	backgroundColor: 'white',
@@ -68,6 +67,7 @@ const titles = {
 	fontSize: '36px',
 	color: '#2F4858',
 	textAlign: 'center',
+	margin: '0%',
 };
 
 const PlayerSection = () => (
@@ -81,7 +81,12 @@ const PlayerSection = () => (
 			paddingTop: '2rem',
 			paddingBottom: '2rem',
 		}}>
-		<h2 style={titles}>For Spillere</h2>
+		<div
+			style={{
+				height: '4rem',
+			}}>
+			<h2 style={titles}>For Spillere</h2>
+		</div>
 		<div style={cardContainer}>
 			<div style={cardHome}>
 				<Image src={cardImageOne} alt='garde goal, fotball goal medium size' />

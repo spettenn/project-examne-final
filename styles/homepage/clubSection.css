@@ -1,18 +1,24 @@
 .klubb_section {
     min-height: 100vh;
     background-color: var(--secondary-color);
-    z-index: 999999;
+    z-index: 20;
     height: fit-content;
 }
 .video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-  }
-  
-  .video-responsive iframe {
-    left: 0;
-    top: 0;
-  }
-  
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-responsive iframe {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  max-height: 29rem;
+  max-width: 54rem;
+  margin: auto;
+}
