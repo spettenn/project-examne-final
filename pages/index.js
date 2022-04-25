@@ -9,10 +9,7 @@ import Nav from '../src/components/navigation/navigation.js';
 import Product from '../src/components/productFetch';
 import axios from 'axios';
 import Banner from '../src/components/homePage/homepageBanner';
-
-/*axios.get('http://localhost:1337/api/products').then((response) => {
-	console.log(response);
-});*/
+import Footer from '../src/components/footer/footer.js';
 
 const mainLayout = {
 	display: 'flex',
@@ -48,6 +45,7 @@ export default function Home() {
 				<section id='forKlubber'>
 					<ClubSection />
 				</section>
+				<Footer />
 			</main>
 		</div>
 	);

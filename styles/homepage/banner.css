@@ -53,13 +53,13 @@
 	transform: skew(5deg);
 }
 .spillere {
-	background-image: url(../../public/localmedia/banner_img_one.jpg);
+	background-image: url(../../public/localmedia/banner_img_two.jpg);
 	background-position: center center;
 	background-size: cover;
 	display: flex;
 }
 .klubber {
-	background-image: url(../../public/localmedia/banner_img_two.jpg);
+	background-image: url(../../public/localmedia/banner_img_one.jpg);
 	background-position: center center;
 	background-size: cover;
 	display: flex;
@@ -127,7 +127,7 @@
 	}
 	.inner__spillere {
 		display: flex;
-		background-image: url(../../public/localmedia/banner_img_one.jpg);
+		background-image: url(../../public/localmedia/banner_img_two.jpg);
 		background-position: center center;
 		background-size: cover;
 		height: 46.5vh;
@@ -137,7 +137,7 @@
 	}
 	.inner__klubber {
 		display: flex;
-		background-image: url(../../public/localmedia/banner_img_two.jpg);
+		background-image: url(../../public/localmedia/banner_img_one.jpg);
 		background-position: center center;
 		background-size: cover;
 		height: 46.5vh;
