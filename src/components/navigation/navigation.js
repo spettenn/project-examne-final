@@ -83,6 +83,7 @@ export default function Nav() {
 							text-align: center;
 							-webkit-box-shadow: 0px 1px 3px 1px #5e5e5e;
 							box-shadow: 0px 1px 3px 1px #5e5e5e;
+							z-index: 500;
 						}
 						li {
 							padding: 1rem;
@@ -90,6 +91,7 @@ export default function Nav() {
 							border-bottom: 1px solid var(--secondary-color);
 							-webkit-box-shadow: 0px 1px 1px 0px #979797;
 							box-shadow: 0px 1px 1px 0px #979797;
+							z-index: 500;
 						}
 						.navigation {
 							flex-direction: row;
