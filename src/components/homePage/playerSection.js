@@ -31,7 +31,7 @@ const cardHome = {
 	marginBottom: '1rem',
 };
 const cardNett = {
-	maxWidth: '922px',
+	maxWidth: '51.8rem',
 	display: 'flex',
 	flexDirection: 'row',
 	flexWrap: 'wrap',

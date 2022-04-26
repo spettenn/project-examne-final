@@ -99,7 +99,7 @@ export default function Nav() {
 						.nav_container {
 							display: flex;
 							flex-direction: row;
-							position: fixed;
+							
 						}
 					}
 				`}</style>
