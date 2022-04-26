@@ -15,26 +15,22 @@ export default function Nav() {
 	};
 
 	return (
-		<section style={{}}>
+		<section className='nav_section_container' style={{}}>
 			<div className='nav_container'>
 				<div className='navigation'>
 					<ul>
 						<li>
-							<ActiveLink
-								activeClassName='active'
-								href='../../pages/products.js'>
+							<ActiveLink activeClassName='active' href='/products.js'>
 								<a>Produkter</a>
 							</ActiveLink>
 						</li>
 						<li>
-							<ActiveLink activeClassName='active' href='../../pages/faq.js'>
+							<ActiveLink activeClassName='active' href='/faq.js'>
 								<a>Info</a>
 							</ActiveLink>
 						</li>
 						<li>
-							<ActiveLink
-								activeClassName='active'
-								href='../../pages/contact.js'>
+							<ActiveLink activeClassName='active' href='/contact.js'>
 								<a>Kontakt oss</a>
 							</ActiveLink>
 						</li>
@@ -59,10 +55,12 @@ export default function Nav() {
 						max-width: 1200px;
 						min-width 1000px;
 					}
+					.nav_container {
+						position: relaltive;
+					}
 					.hamburger {
 						display: none;
 					}
-
 					@media (max-width: 767px) {
 						.hamburger {
 							display: flex;
@@ -99,6 +97,7 @@ export default function Nav() {
 						.nav_container {
 							display: flex;
 							flex-direction: row;
+							position: fixed;
 						}
 					}
 				`}</style>
