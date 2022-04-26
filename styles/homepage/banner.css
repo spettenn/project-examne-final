@@ -105,6 +105,7 @@
 	cursor: pointer;
 	margin: auto;
 	border: 1px solid var(--main-color);
+	border-radius: 1px;
 }
 .banner__btn:hover {
 	color: white;
@@ -158,26 +159,32 @@
 	.mobile__banner__title {
 		color: white;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 1.6rem;
+		margin: 0%;
 	}
 	.mobile__banner__text {
 		color: white;
 		text-align: center;
 		font-size: 1.3rem;
+		font-weight: lighter;
 	}
 	.mobile__banner__btn {
+		z-index: 7;
 		text-align: center;
-		text-decoration: none;
-		background-color: var(--mainColor);
-		color: white;
-		border: 1px solid var(--mainColor);
+		font-size: 1.5rem;
+		background-color: var(--main-color);
 		width: 80%;
-		margin: auto;
+		opacity: 100%;
+		text-decoration: none;
+		color: white;
 		cursor: pointer;
+		margin: auto;
+		border: 1px solid var(--main-color);
+		border-radius: 1px;
 	}
 	.mobile__banner__btn:hover {
 		color: white;
 		background-color: transparent;
-		border: 1px solid var(--mainColor);
+		border: 1px solid var(--main-color);
 	}
 }
