@@ -5,7 +5,8 @@ import Image from 'next/image';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ActiveLink from '../navigation/activeLink';
+//import ActiveLink from '../navigation/activeLink';
+import Link from 'next/Link';
 
 export default function Nav() {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -20,19 +21,19 @@ export default function Nav() {
 				<div className='navigation'>
 					<ul>
 						<li>
-							<ActiveLink activeClassName='active' href='/products.js'>
+							<Link activeClassName='active' href='/pages/products.js'>
 								<a>Produkter</a>
-							</ActiveLink>
+							</Link>
 						</li>
 						<li>
-							<ActiveLink activeClassName='active' href='/faq.js'>
+							<Link activeClassName='active' href='/pages/faq.js'>
 								<a>Info</a>
-							</ActiveLink>
+							</Link>
 						</li>
 						<li>
-							<ActiveLink activeClassName='active' href='/contact.js'>
+							<Link activeClassName='active' href='/pages/contact.js'>
 								<a>Kontakt oss</a>
-							</ActiveLink>
+							</Link>
 						</li>
 						<FontAwesomeIcon
 							className='cart_nav'
@@ -52,8 +53,6 @@ export default function Nav() {
 					.nav_container {
 						display: flex;
 						flex-direction: row-reverse;
-						max-width: 1200px;
-						min-width 1000px;
 					}
 					.nav_container {
 						position: relaltive;
@@ -99,7 +98,6 @@ export default function Nav() {
 						.nav_container {
 							display: flex;
 							flex-direction: row;
-							
 						}
 					}
 				`}</style>
