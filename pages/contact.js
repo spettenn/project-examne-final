@@ -1,20 +1,17 @@
 import Head from 'next/head';
-import Nav from '../src/components/navigation/navigation';
-
 import Image from 'next/image';
 
 const contact_layout = {
 	minHeight: '100vh',
 	width: '100%',
 	display: 'flex',
-	flexDirection: 'column',
+	flexDirection: 'row',
 };
 const contact_left_container = {
 	width: '100%',
 };
 const contact_form_container = {
 	width: '100%',
-	backGroundColor: 'var(--secondary-color)',
 };
 const contact_title = {
 	textAlign: 'center',
@@ -28,12 +25,15 @@ export default function Contact() {
 			</Head>
 
 			<main style={contact_layout}>
-				<h1 style={contact_title}>contact us</h1>
-				<div style={{ display: 'flex', flexDirection: 'row' }}>
+				<div>
 					<div
 						className='contact_left_container'
-						style={contact_left_container}></div>
-					<div style={contact_form_container}></div>
+						style={contact_left_container}>
+						<h2>Hello there</h2>
+					</div>
+					<div className='cotact_left_container' style={contact_form_container}>
+						<h2 style={contact_title}>Kontakt oss</h2>
+					</div>
 				</div>
 			</main>
 		</div>
