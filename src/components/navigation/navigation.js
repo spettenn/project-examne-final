@@ -5,8 +5,7 @@ import Image from 'next/image';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import ActiveLink from '../navigation/activeLink';
-import Link from 'next/Link';
+import ActiveLink from '../navigation/activeLink';
 
 export default function Nav() {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -21,19 +20,24 @@ export default function Nav() {
 				<div className='navigation'>
 					<ul>
 						<li>
-							<Link activeClassName='active' href='/pages/products.js'>
+							<ActiveLink activeClassName='active' href='/'>
+								<a>Hjem</a>
+							</ActiveLink>
+						</li>
+						<li>
+							<ActiveLink activeClassName='active' href='/products'>
 								<a>Produkter</a>
-							</Link>
+							</ActiveLink>
 						</li>
 						<li>
-							<Link activeClassName='active' href='/pages/faq.js'>
+							<ActiveLink activeClassName='active' href='/faq'>
 								<a>Info</a>
-							</Link>
+							</ActiveLink>
 						</li>
 						<li>
-							<Link activeClassName='active' href='/pages/contact.js'>
+							<ActiveLink activeClassName='active' href='/contact'>
 								<a>Kontakt oss</a>
-							</Link>
+							</ActiveLink>
 						</li>
 						<FontAwesomeIcon
 							className='cart_nav'
@@ -46,7 +50,7 @@ export default function Nav() {
 					</div>
 				</div>
 				<div className='logo_nav_container'>
-					<Image className='logo_nav' src={logo} alt='logo' />
+					<Image className='logo_nav' src={logo} href='/index' alt='logo' />
 				</div>
 
 				<style jsx>{`

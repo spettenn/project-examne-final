@@ -3,6 +3,7 @@
 @import './homepage/navigation.css';
 @import './homepage/banner.css';
 @import "./homepage/footer.css";
+@import "./contact/contact.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 

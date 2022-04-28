@@ -53,9 +53,13 @@
 .nav_section_container {
 	display: flex;
 	justify-content: center;
+	background-color: #ECECEC;
 }
 .nav_container {
 	min-width: 50rem;
+}
+.active {
+	color: var(--main-color);
 }
 @media (max-width: 767px) {
 	.nav_section_container {

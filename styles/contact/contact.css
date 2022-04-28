@@ -1,0 +1,5 @@
+.contact_left_container {
+    background-image: url(../../public/localmedia/contact_img.png);
+    background-size: cover;
+    z-index: 200;
+}

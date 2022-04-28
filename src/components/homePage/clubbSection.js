@@ -12,7 +12,7 @@ const clubCard = {
 	marginRight: '0.5rem',
 	marginLeft: '0.5rem',
 	padding: '1rem',
-
+	maxHeight: '32rem',
 	maxWidth: '450px',
 	marginBottom: '1rem',
 };
@@ -72,7 +72,12 @@ const ClubSection = () => (
 				opptil 1/3 av utgiftene ved kjøp over 10.000,-
 			</p>
 		</div>
-		<div style={{ display: 'flex', justifyContent: 'center' }}>
+		<div
+			style={{
+				display: 'flex',
+				justifyContent: 'center',
+				minHeight: '18.1rem',
+			}}>
 			<Image src={klubbBanner} alt='many goals lined up for clubs' />
 		</div>
 		<div
