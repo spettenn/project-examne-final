@@ -1,9 +1,8 @@
-/*import axios from 'axios';
+import axios from 'axios';
 
 axios.get('http://localhost:1337/api/products').then((response) => {
 	console.log(response.data.data);
 });
-console.log(response);
 
 const Product = ({ products, error }) => {
 	if (error) {
@@ -26,15 +25,4 @@ Product.getInitialProps = async (ctx) => {
 	}
 };
 
-export default Product;*/
-
-export default class StrapiProducts {
-	constructor() {}
-
-	async fetchApi(path) {
-		const request = `${process.env.STRAPI_API_URL}${path}`;
-		const response = await fetch(request);
-		const data = await response.json();
-		return data;
-	}
-}
+export default Product;

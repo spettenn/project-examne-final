@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const contact_layout = {
 	minHeight: '100vh',
@@ -16,6 +19,7 @@ const contact_form_container = {
 const contact_title = {
 	textAlign: 'center',
 };
+
 export default function Contact() {
 	return (
 		<div>
@@ -25,11 +29,21 @@ export default function Contact() {
 			</Head>
 
 			<main style={contact_layout}>
-				<div>
+				<div
+					style={{
+						width: '100%',
+						display: 'flex',
+						flexDirection: 'row',
+					}}>
 					<div
 						className='contact_left_container'
 						style={contact_left_container}>
-						<h2>Hello there</h2>
+						<Link href='/'>
+							<a className='tilbake'>
+								<FontAwesomeIcon className='tilbake_icon' icon={faArrowLeft} />
+								Tilbake
+							</a>
+						</Link>
 					</div>
 					<div className='cotact_left_container' style={contact_form_container}>
 						<h2 style={contact_title}>Kontakt oss</h2>
