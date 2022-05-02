@@ -7,6 +7,10 @@
     width: 50%;
     min-height: 100vh;
 }
+.cotact_right_container {
+    background-color: var(--secondary-color);
+    width: 50%;
+}
 .contact_form_container {
     width: 50%;
     min-height: 100vh;
@@ -33,10 +37,16 @@
 }
 .tilbake:hover {
     background-color: transparent;
-    color: var(--main-color);
+    color: white;
+}
+.contact_image_container {
+    padding: 1rem;
 }
 @media (max-width: 767px) {
     .contact_left_container {
         display: none;
+    }
+    .cotact_right_container {
+        width: 100%;
     }
 }

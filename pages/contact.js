@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import AnImage from '../public/localmedia/footerImage.png';
 
 const contact_layout = {
 	minHeight: '100vh',
@@ -10,14 +11,13 @@ const contact_layout = {
 	display: 'flex',
 	flexDirection: 'row',
 };
-const contact_left_container = {
-	width: '100%',
-};
+const contact_left_container = {};
 const contact_form_container = {
 	width: '100%',
 };
 const contact_title = {
 	textAlign: 'center',
+	Color: 'white',
 };
 
 export default function Contact() {
@@ -44,8 +44,15 @@ export default function Contact() {
 								Tilbake
 							</a>
 						</Link>
+						<div className='contact_image_container'>
+							<Image
+								src={AnImage}
+								className='contact_image'
+								alt='tripple A rated business'
+							/>
+						</div>
 					</div>
-					<div className='cotact_left_container' style={contact_form_container}>
+					<div className='cotact_right_container'>
 						<h2 style={contact_title}>Kontakt oss</h2>
 					</div>
 				</div>
