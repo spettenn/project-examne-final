@@ -156,7 +156,7 @@ export default function Faq() {
 							</span>
 						</p>
 						<button onClick='readMore()' id='myBtn'>
-							Read more
+							Les mere
 						</button>
 					</div>
 				</div>
