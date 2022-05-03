@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Nav from '../src/components/navigation/navigation';
-//import StrapiProducts from '../src/components/productFetch.js';
+import Product from './products/productFetch.js';
 
 const product_layout = {
 	display: 'flex',
@@ -10,7 +10,7 @@ const product_layout = {
 	minHeight: '100vh',
 };
 
-export default function Products() {
+export default function ProductsAPI() {
 	return (
 		<div>
 			<Head>
@@ -20,6 +20,7 @@ export default function Products() {
 			<Nav />
 			<main style={product_layout}>
 				<h1>Products</h1>
+				<Product />
 			</main>
 		</div>
 	);

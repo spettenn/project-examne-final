@@ -7,7 +7,7 @@ import PlayerSection from '../src/components/homePage/playerSection.js';
 import ClubSection from '../src/components/homePage/clubbSection.js';
 import Nav from '../src/components/navigation/navigation.js';
 //import Product from '../src/components/productFetch';
-import axios from 'axios';
+//import axios from 'axios';
 import Banner from '../src/components/homePage/homepageBanner';
 import Footer from '../src/components/footer/footer.js';
 
