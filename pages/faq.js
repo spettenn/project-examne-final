@@ -10,6 +10,9 @@ const faq_layout = {
 	justifyContent: 'center',
 	flexDirection: 'column',
 };
+const font_weight_thick = {
+	fontWeight: 'thick',
+};
 
 function readMore() {
 	var dots = document.getElementById('dots');
@@ -124,13 +127,13 @@ export default function Faq() {
 						</p>
 						<h2 className='faq_small_title'>Oppbevaring?</h2>
 						<p className='faq_text'>
-							Rammen:
+							<p style={font_weight_thick}>Rammen:</p>
 							<br /> Hvis du behandler målet ditt som du ville gjort med bilen
 							din vil du ha gledet av målet i mange år fremover uten behov for å
 							bytte ut hverken nett eller andre deler. Vi anbefaler å tørke av
 							målet/spyle det med rent vann av og til slik at ikke salt og
 							forurensning fra regn sliter på de beveglige delene. <br />
-							Nettet:
+							<p style={font_weight_thick}>Nettet:</p>
 							<br />
 							Vi anbefaler at nettet oppbevares tørt og at det får lov til å
 							tørke i åpnet tilstand slik at man unngår råte og jordslag.

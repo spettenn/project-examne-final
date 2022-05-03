@@ -1,6 +1,8 @@
 .faq_title {
     color: var(--secondary-color);
     text-align: center;
+    margin: 0%;
+    margin-top: 1rem;
 }
 .sponsor_text {
     width: 50rem;
@@ -12,15 +14,22 @@
 }
 .inner_text_container {
     width: 40%;
+    max-width: 60rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
+.faq_small_title {
+color: var(--secondary-color);
+margin: 0.4rem;
+}
+
 .faq_text_container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
+    max-width: 60rem;
 }
 #more {display: none;}
 @media (max-width: 767px)  {
