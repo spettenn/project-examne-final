@@ -63,6 +63,7 @@ const ClubSection = () => (
 				minHeight: '3rem',
 				backgroundColor: 'var(--main-color)',
 				textAlign: 'center',
+				boxShadow: '1px 2px 6px 1px #383737',
 			}}>
 			<p
 				style={{
@@ -72,12 +73,7 @@ const ClubSection = () => (
 				opptil 1/3 av utgiftene ved kjøp over 10.000,-
 			</p>
 		</div>
-		<div
-			style={{
-				display: 'flex',
-				justifyContent: 'center',
-				minHeight: '18.1rem',
-			}}>
+		<div className='klubb_backgound_img'>
 			<Image src={klubbBanner} alt='many goals lined up for clubs' />
 		</div>
 		<div

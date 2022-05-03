@@ -33,7 +33,6 @@ export default function Contact() {
 					style={{
 						width: '100%',
 						display: 'flex',
-						flexDirection: 'row',
 					}}>
 					<div
 						className='contact_left_container'
@@ -51,9 +50,15 @@ export default function Contact() {
 								alt='tripple A rated business'
 							/>
 						</div>
+						<p className='contact_side_text'>
+							Gjør det du vil,
+							<br /> hvor du vil,
+							<br /> når du vil.
+							<br /> - Fredrik Finstad
+						</p>
 					</div>
-					<div className='cotact_right_container'>
-						<h2 style={contact_title}>Kontakt oss</h2>
+					<div className='contact_right_container'>
+						<h2 className='contact_title'>Kontakt oss</h2>
 					</div>
 				</div>
 			</main>

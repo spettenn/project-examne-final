@@ -3,6 +3,7 @@
     background-color: var(--secondary-color);
     z-index: 20;
     height: fit-content;
+    box-shadow: 1px 2px 6px 1px #000;
 }
 .video-responsive {
   overflow: hidden;
@@ -21,4 +22,14 @@
   max-height: 29rem;
   max-width: 54rem;
   margin: auto;
+}
+.klubb_backgound_img {
+  display: flex;
+  justify-content: center;
+  min-height: 18.1rem;
+}
+@media (max-width: 767px) {
+  .klubb_backgound_img {
+    display: none;
+  }
 }

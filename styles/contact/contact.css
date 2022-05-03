@@ -3,13 +3,17 @@
     background-size: cover;
     background-position: center center;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     z-index: 200;
     width: 50%;
     min-height: 100vh;
+    box-shadow: -7px 0px 10px 5px #000;
 }
-.cotact_right_container {
+.contact_right_container {
     background-color: var(--secondary-color);
     width: 50%;
+    box-shadow: -7px 0px 10px 5px #000;
 }
 .contact_form_container {
     width: 50%;
@@ -42,11 +46,21 @@
 .contact_image_container {
     padding: 1rem;
 }
+.contact_title {
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.contact_side_text {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
 @media (max-width: 767px) {
     .contact_left_container {
         display: none;
     }
-    .cotact_right_container {
+    .contact_right_container {
         width: 100%;
     }
 }
