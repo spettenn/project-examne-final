@@ -1,4 +1,33 @@
 import axios from 'axios';
+
+axios.get('http://localhost:1337/api/products').then((response) => {
+	console.log(response.data.data);
+});
+const Product = ({ products, error }) => {
+	if (error) {
+		return <div>An error occured: {error.message}</div>;
+	}
+	return (
+		<ul>
+			{products?.map((product) => (
+				<li key={product.id}>{product.attributes.name}</li>
+			))}
+		</ul>
+	);
+};
+
+Product.getInitialProps = async (ctx) => {
+	try {
+		const res = await axios.get('http://localhost:1337/api/products');
+		const products = res.data.data;
+		return { products };
+	} catch (error) {
+		return { error };
+	}
+};
+export default Product;
+
+/*
 import React, { useRef, useState } from 'react';
 
 //axios.get('http://localhost:1337/api/products').then((response) => {
@@ -14,7 +43,7 @@ const Product = ({ products, error }) => {
 		<ul>
 			{products.length > 0 &&
 				products?.map((product) => (
-					<li key={product.id}>{product.attributes.title}</li>
+					<li key={product.id}>{product.attributes.name}</li>
 				))}
 		</ul>
 	);
@@ -28,6 +57,4 @@ Product.getInitialProps = async (ctx) => {
 	} catch (error) {
 		return { error };
 	}
-};
-
-export default Product;
+};*/

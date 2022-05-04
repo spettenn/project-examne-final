@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Nav from '../src/components/navigation/navigation';
-import Product from './products/productFetch.js';
+import Home from './products/productFetch.js';
 
 const product_layout = {
 	display: 'flex',
@@ -10,7 +10,7 @@ const product_layout = {
 	minHeight: '100vh',
 };
 
-export default function ProductsAPI() {
+export default function Products() {
 	return (
 		<div>
 			<Head>
@@ -20,8 +20,19 @@ export default function ProductsAPI() {
 			<Nav />
 			<main style={product_layout}>
 				<h1>Products</h1>
-				<Product />
 			</main>
 		</div>
 	);
+}
+export async function getStaticProps() {
+	const { URL } = 'http://localhost:1337/api/products';
+
+	const res = await fetch(`http://localhost:1337/api/products`);
+	const data = await res.json();
+
+	return {
+		props: {
+			product: data.data,
+		},
+	};
 }
