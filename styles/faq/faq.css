@@ -26,6 +26,17 @@
 color: var(--secondary-color);
 margin: 0.4rem;
 }
+.terms_container {
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: auto;
+max-width: 60rem;
+}
+.terms_inner_container {
+    width: 82%;
+    margin: auto;
+}
 
 .faq_text_container {
     display: flex;
@@ -43,5 +54,12 @@ margin: 0.4rem;
     .inner_text_container {
         width: 90%;
         text-align: center;
+    }
+    .sponsor_text {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--secondary-color);
     }
 }

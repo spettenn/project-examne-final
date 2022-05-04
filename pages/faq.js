@@ -15,17 +15,20 @@ const font_weight_thick = {
 };
 
 function readMore() {
-	var dots = document.getElementById('dots');
-	var moreText = document.getElementById('more');
-	var btnText = document.getElementById('myBtn');
+	const dots = document.getElementById('dots');
+	let moreText = document.getElementById('more');
+	const btnOne = document.getElementById('btn_returrett');
+	const btnTwo = document.getElementById('btn_salg');
 
 	if (dots.style.display === 'none') {
 		dots.style.display = 'inline';
-		btnText.innerHTML = 'Les mere';
+		btnOne.innerHTML = 'Les mere';
+		btnTwo.innerHTML = 'les mere';
 		moreText.style.display = 'none';
 	} else {
 		dots.style.display = 'none';
-		btnText.innerHTML = 'Les mindre';
+		btnOne.innerHTML = 'Les mindre';
+		btnTwo.innerHTML = 'Les mindre';
 		moreText.style.display = 'inline';
 	}
 }
@@ -157,10 +160,59 @@ export default function Faq() {
 								påtrykket logo eller annen illustrasjon som ikke føres som
 								lagervare.
 							</span>
+							<button onClick={readMore} id='btn_returrett'>
+								Les mere
+							</button>
 						</p>
-						<button onClick='readMore()' id='myBtn'>
-							Les mere
-						</button>
+					</div>
+					<div className='terms_inner_container'>
+						<p>
+							Salgsbetingelser: lagførte varer iht angrerettloven{' '}
+							<span id='dots'>...</span>
+							<span id='more'>
+								Selger: Funtoplay AS, Neslia 48, 1344 Haslum, Tlf. 911 70 952,
+								E-post: post@funtoplay.no <br />
+								Kunde: Den som er oppgitt som kjøper i nettbutikkbestilling.
+								<br /> Bestilling: Varene bestilles i nettbutikken og Kjøper vil
+								få tilsendt en ordrebekreftelse pr e-post straks etter
+								bestillingen er avsluttet. Les nøye gjennom ordrebekreftelsen,
+								og vær sikker på at ordrebekreftelsen er korrekt.
+								<br /> Betaling: Bestillinger forhåndsbetales via bank, med
+								kredittkort eller som Postoppkrav. Ved valg av Postoppkrav vil
+								det tilkomme ett gebyr tilsvarende Postens satser.
+								<br /> Angrerett Selger følger de norske reglene for angrerett.
+								Angrerettskjemaet kan lastes ned her: Angrerett skjema bokmål
+								pdf Angrerett skjema nynorsk pdf Benyttes angreretten må
+								Selgeren varslen innen 14 dager Jf. angrerettlovens § 13. Ved
+								retur må produktet ikke være brukt, ligge i original emballasje
+								og etiketter må ikke være fjernet. Ved bruk av angreretten skal
+								returen skje kostnadsfritt for Funtoplay AS. Pakker som sendes i
+								oppkrav eller “mottaker betaler frakt” vil ikke bli hentet ut.
+								Jf. angrerettloven § 15 første ledd. Ved retur må produktet ha
+								ankommet Selger innen 30 dager. Varer som er spesielt profilert
+								for Kjøper kan ikke returneres Jf. angrerettlovens § 16. Hele
+								loven kan leses her. Garanti/reklamasjon: Det gis 2 års garanti
+								på produksjonsfeil. Hvis det oppdages en feil eller mangel må
+								Kjøperen innen rimelig tid etter at det er oppdaget, eller burde
+								ha oppdaget det, sende skriftlig melding med ordrereferanse til
+								post@funtoplay.no om at det påberopes reklamasjon. Reklamasjon
+								må senest skje to år etter varen er kjøpt. Hvis det ikke
+								reklameres i tide, tapes retten til reklamasjon. Det kan
+								forekomme kvalitetsavvik på +/- 5% på grunn av forskjellige
+								kvaliteter og egenskaper på materialene og dette er ikke å regne
+								som reklamasjon. Force majeure: Krig, naturkatastrofer,
+								terrorhandlinger, streik/arbeidskonflikter, politiske
+								avgjørelser, uteblitte leveranser fra underleverandører,
+								fordyrende omstendigheter samt lignende situasjoner utenfor
+								Selgerens kontroll som ikke med rimelighet kunne forutse eller
+								overvinne eller unngå følgene av, og som påvirker inngåtte
+								avtaler, skal utgjøre grunn til at Selger løses fra denne
+								avtalen.
+							</span>
+							<button onClick={readMore} id='btn_salg'>
+								Les mere
+							</button>
+						</p>
 					</div>
 				</div>
 			</main>

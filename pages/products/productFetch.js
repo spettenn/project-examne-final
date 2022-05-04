@@ -1,10 +1,10 @@
 import axios from 'axios';
+import React, { useRef, useState } from 'react';
 
-axios.get('http://localhost:1337/api/products').then((response) => {
-	console.log(response.data.data);
-	const data = response.data.data;
-	console.log(data);
-});
+//axios.get('http://localhost:1337/api/products').then((response) => {
+//	const data = response.data.data;
+//	console.log(data);
+//});
 
 const Product = ({ products, error }) => {
 	if (error) {
@@ -12,9 +12,10 @@ const Product = ({ products, error }) => {
 	}
 	return (
 		<ul>
-			{products?.map((product) => (
-				<li key={products.id}>{products.name}</li>
-			))}
+			{products.length > 0 &&
+				products?.map((product) => (
+					<li key={product.id}>{product.attributes.title}</li>
+				))}
 		</ul>
 	);
 };
@@ -30,30 +31,3 @@ Product.getInitialProps = async (ctx) => {
 };
 
 export default Product;
-
-/*
-export const getStaticProps = async () => {
-	const res = await fetch('http://localhost:1337/api/products');
-	const data = await res.json();
-
-	return {
-		props: {
-			product: data,
-		},
-	};
-};
-const Products = ({ product }) => {
-	return (
-		<div>
-			<h1>products</h1>
-			{product.map((product) => (
-				<div key={product.id}>
-					<a>
-						<h3>{product.name}</h3>
-					</a>
-				</div>
-			))}
-		</div>
-	);
-};
-export default Products;*/
