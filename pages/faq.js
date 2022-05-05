@@ -45,7 +45,7 @@ export default function Faq() {
 				<h1 className='faq_title'>Sponsor</h1>
 				<div className='sponsor_text'>
 					<p>
-						Norges største lagidrett! <br />
+						<p className='faq_text_weight'>Norges største lagidrett!</p>
 						Ønsker du å sponse Norges bredde & toppfotball? <br />
 						Vi tilbyr enkel og effektiv promotering av egen merkevare på våre
 						populære fotballmål. Økonomi en utfordring for mange klubber, derfor
@@ -130,14 +130,13 @@ export default function Faq() {
 						</p>
 						<h2 className='faq_small_title'>Oppbevaring?</h2>
 						<p className='faq_text'>
-							<p style={font_weight_thick}>Rammen:</p>
-							<br /> Hvis du behandler målet ditt som du ville gjort med bilen
-							din vil du ha gledet av målet i mange år fremover uten behov for å
-							bytte ut hverken nett eller andre deler. Vi anbefaler å tørke av
+							<p className='faq_text_weight'>Rammen:</p>
+							Hvis du behandler målet ditt som du ville gjort med bilen din vil
+							du ha gledet av målet i mange år fremover uten behov for å bytte
+							ut hverken nett eller andre deler. Vi anbefaler å tørke av
 							målet/spyle det med rent vann av og til slik at ikke salt og
 							forurensning fra regn sliter på de beveglige delene. <br />
-							<p style={font_weight_thick}>Nettet:</p>
-							<br />
+							<p className='faq_text_weight'>Nettet:</p>
 							Vi anbefaler at nettet oppbevares tørt og at det får lov til å
 							tørke i åpnet tilstand slik at man unngår råte og jordslag.
 							Nettene er laget av Nylon og tåler ikke stå over lenge tid i

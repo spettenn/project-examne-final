@@ -45,7 +45,10 @@ export default function Home() {
 				<section id='forKlubber'>
 					<ClubSection />
 				</section>
-				<Footer />
+				<section>
+					<Footer />
+					<h1>HELLO</h1>
+				</section>
 			</main>
 		</div>
 	);

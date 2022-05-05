@@ -1,10 +1,9 @@
-.footerContainer {
+.footer_container {
     min-height: 8rem;
     width: 100%;
-    
+    display: flex;
 }
-.footerInfo {
+.footer_info {
     display: flex;
     flex-direction: column;
-
 }
