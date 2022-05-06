@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Nav from '../src/components/navigation/navigation';
-import Home from './products/productFetch.js';
+import Product from './products/productFetch.js';
+import { goalRender } from './api/index';
+import axios from 'axios';
 
 const product_layout = {
 	display: 'flex',
@@ -10,7 +12,15 @@ const product_layout = {
 	minHeight: '100vh',
 };
 
-export default function Products() {
+export const getServerSideProps = async (ctx) => {
+	const res = await axios.get('http://localhost:1337/api/products');
+	console.log(res.data);
+	const products = res.data.data;
+	return { props: { products: res.data } };
+};
+
+export default function Products({ products }) {
+	console.log(products);
 	return (
 		<div>
 			<Head>
@@ -20,19 +30,16 @@ export default function Products() {
 			<Nav />
 			<main style={product_layout}>
 				<h1>Products</h1>
+				{products.data.map((product) => {
+					return (
+						<div key={product.id}>
+							<h3>{product.attributes.name}</h3>
+							<p>{product.attributes.description}</p>
+							<p>{product.attributes.info}</p>
+						</div>
+					);
+				})}
 			</main>
 		</div>
 	);
-}
-export async function getStaticProps() {
-	const { URL } = 'http://localhost:1337/api/products';
-
-	const res = await fetch(`http://localhost:1337/api/products`);
-	const data = await res.json();
-
-	return {
-		props: {
-			product: data.data,
-		},
-	};
 }
