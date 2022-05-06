@@ -9,7 +9,7 @@ import Nav from '../src/components/navigation/navigation.js';
 //import Product from '../src/components/productFetch';
 //import axios from 'axios';
 import Banner from '../src/components/homePage/homepageBanner';
-import Footer from '../src/components/footer/footer.js';
+import Footer from '../src/components/footer/footer';
 
 const mainLayout = {
 	display: 'flex',
@@ -47,7 +47,6 @@ export default function Home() {
 				</section>
 				<section>
 					<Footer />
-					<h1>HELLO</h1>
 				</section>
 			</main>
 		</div>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import footerImage from '../../../public/localmedia/footerImage.png';
 
-const Footer = () => {
+const Footer = () => (
 	<div className='footer_container'>
 		<div className='footer_info'>
 			<h4 className='footer_title'>OM OSS</h4>
@@ -11,7 +11,9 @@ const Footer = () => {
 				når som helst, hvor som helst
 			</p>
 		</div>
-		<Image src={footerImage} alt='tripple A rated ofc' />
+		<div className='footer_img'>
+			<Image src={footerImage} alt='tripple A rated ofc' />
+		</div>
 		<div className='footer_info'>
 			<h4 className='footer_title'>SAMFUNNSANSVAR</h4>
 			<p className='footer_text'>
@@ -19,6 +21,6 @@ const Footer = () => {
 				overgangen fra fossile til fornybare solcelle baserte energikild
 			</p>
 		</div>
-	</div>;
-};
+	</div>
+);
 export default Footer;

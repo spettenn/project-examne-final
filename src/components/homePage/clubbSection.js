@@ -41,7 +41,7 @@ const inforBtn = {
 };
 
 const ClubSection = () => (
-	<section
+	<div
 		className='klubb_section'
 		style={{
 			paddingTop: '1rem',
@@ -114,7 +114,7 @@ const ClubSection = () => (
 			</div>
 		</div>
 		<YoutubeEmbed embedId='QbeZkLHfnJY' />
-	</section>
+	</div>
 );
 
 export default ClubSection;
