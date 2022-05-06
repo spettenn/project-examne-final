@@ -1,4 +1,5 @@
 import axios from 'axios';
+export const base_url = 'http://localhost:1337/api/products';
 
 const Product = ({ products, error }) => {
 	console.log(products);
