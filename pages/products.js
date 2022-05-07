@@ -8,9 +8,10 @@ const product_layout = {
 	display: 'flex',
 	flexDirection: 'row',
 	flexWrap: 'wrap',
-	justifyContent: 'center',
+	justifyContent: 'space-between',
 	backgroundColor: '#ECECEC',
 	minHeight: '100vh',
+	padding: '2rem',
 };
 
 export const getServerSideProps = async (ctx) => {
@@ -32,6 +33,39 @@ export default function Products({ products }) {
 			<main style={product_layout}>
 				{products.data.map((product) => {
 					return (
+						<div className='card' key={product.id}>
+							<section className='front'>
+								<h3 className='card_title'>{product.attributes.name}</h3>
+								<p className='card_dimensions'>
+									{product.attributes.dimensjoner}
+								</p>
+							</section>
+							<section className='back'>
+								<h3 className='card_title_flipped'>
+									{product.attributes.name}
+								</h3>
+								<p className='card_dimensions_flipped'>
+									{product.attributes.dimensjoner}
+								</p>
+							</section>
+						</div>
+					);
+				})}
+			</main>
+		</div>
+	);
+}
+/*<div className='product_card' key={product.id}>
+							<div className='text_container'>
+								<h3 className='card_title'>{product.attributes.name}</h3>
+								<p className='card_dimensions'>
+									{product.attributes.dimensjoner}
+								</p>
+							</div>
+						</div>
+						
+						
+						
 						<div className='flip-card' key={product.id}>
 							<div className='flip-card-inner'>
 								<div className='flip-card-front'>
@@ -58,17 +92,8 @@ export default function Products({ products }) {
 								</div>
 							</div>
 						</div>
-					);
-				})}
-			</main>
-		</div>
-	);
-}
-/*<div className='product_card' key={product.id}>
-							<div className='text_container'>
-								<h3 className='card_title'>{product.attributes.name}</h3>
-								<p className='card_dimensions'>
-									{product.attributes.dimensjoner}
-								</p>
-							</div>
-						</div>*/
+						
+						
+						
+						
+						*/
