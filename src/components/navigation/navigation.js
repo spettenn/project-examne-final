@@ -25,7 +25,7 @@ export default function Nav() {
 							</ActiveLink>
 						</li>
 						<li>
-							<ActiveLink activeClassName='active' href='/products'>
+							<ActiveLink activeClassName='active' href='/products/index.js'>
 								<a>Produkter</a>
 							</ActiveLink>
 						</li>

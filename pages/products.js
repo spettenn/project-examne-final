@@ -1,7 +1,7 @@
-import Head from 'next/head';
+/*import Head from 'next/head';
 import Nav from '../src/components/navigation/navigation';
 import Product, { base_url } from './products/productFetch.js';
-import { goalRender } from './api/index';
+//import { goalRender } from './api/index';
 import axios from 'axios';
 
 const product_layout = {
@@ -39,6 +39,7 @@ export default function Products({ products }) {
 								<p className='card_dimensions'>
 									{product.attributes.dimensjoner}
 								</p>
+								<button>Mere info</button>
 							</section>
 							<section className='back'>
 								<h3 className='card_title_flipped'>
@@ -47,6 +48,7 @@ export default function Products({ products }) {
 								<p className='card_dimensions_flipped'>
 									{product.attributes.dimensjoner}
 								</p>
+								<button>Mere info</button>
 							</section>
 						</div>
 					);
@@ -55,7 +57,7 @@ export default function Products({ products }) {
 		</div>
 	);
 }
-/*<div className='product_card' key={product.id}>
+<div className='product_card' key={product.id}>
 							<div className='text_container'>
 								<h3 className='card_title'>{product.attributes.name}</h3>
 								<p className='card_dimensions'>
