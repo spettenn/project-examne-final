@@ -1,0 +1,1 @@
+export const STRAPI_API = "http://localhost:3000"
