@@ -3,7 +3,8 @@ export interface ProductResponse {
     meta: Meta;
   }
   
-  export interface Data {
+export interface Data {
+  [x: string]: any;
     id:         number;
     attributes: Attributes;
   }
@@ -15,8 +16,6 @@ export interface ProductResponse {
     createdAt:      Date;
     updatedAt:      Date;
     publishedAt:    Date;
-    specifications: string;
-    purchased:      string;
     price: string;
     dimensjoner: string; 
   }
