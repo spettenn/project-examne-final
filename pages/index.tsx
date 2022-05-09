@@ -6,8 +6,6 @@ import SponsorSection from '../src/components/homePage/sponsorSection';
 import PlayerSection from '../src/components/homePage/playerSection';
 import ClubSection from '../src/components/homePage/clubbSection';
 import Nav from '../src/components/navigation/navigation';
-//import Product from '../src/components/productFetch';
-//import axios from 'axios';
 import Banner from '../src/components/homePage/homepageBanner';
 import Footer from '../src/components/footer/footer';
 

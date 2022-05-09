@@ -26,8 +26,10 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
 
   const response = await fetch(`${STRAPI_API}/api/products/${id}`)
 
-  if (!response.ok) {
-    throw new Error(await response.text())
+	if (!response.ok) {
+	  console.log(`${STRAPI_API}/api/products/${id}`)
+	  throw new Error(await response.text())
+	  
   }
 
   const product: ProductsResponse = await response.json()

@@ -68,16 +68,16 @@ export async function getStaticProps() {
 */
 import type { InferGetStaticPropsType } from 'next'
 import { ProductResponse } from '../../src/components/stuff/response'
-import Nav from '../../src/components/navigation/navigation'
 import { STRAPI_API } from './consts'
 import Link from "next/link"
-
+import Nav from '../../src/components/navigation/navigation';
 
 export default function Home({
 	products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<main>
+			<Nav />
 			<div>
 				<h2>Hello there</h2>
 			</div>
@@ -108,12 +108,9 @@ export default function Home({
 		</main>
 	)
 };
-				
-
-
 
 export async function getStaticProps() {
-		const response = await fetch(`${STRAPI_API}/api/products`)
+		const response = await fetch(`${STRAPI_API}/api/products?populate=*`)
 
 		if (!response.ok) {
 			throw new Error(await response.text())
