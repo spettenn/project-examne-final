@@ -67,10 +67,11 @@ export async function getStaticProps() {
 }
 */
 import type { InferGetStaticPropsType } from 'next'
-import { ProductResponse } from '../../src/components/stuff/response'
+import { ProductsResponse } from '../../src/components/stuff/product_response'
 import { STRAPI_API } from './consts'
 import Link from "next/link"
 import Nav from '../../src/components/navigation/navigation';
+import Image from 'next/image';
 
 export default function Home({
 	products,
@@ -87,6 +88,7 @@ export default function Home({
 					return (
 						<div className='#' key={product.id}>
 							<section className='#'>
+							
 								<h3 className='card_title'>{product.attributes.name}</h3>
 								<p className='card_dimensions'>
 									{product.attributes.dimensjoner}
@@ -116,7 +118,7 @@ export async function getStaticProps() {
 			throw new Error(await response.text())
 		}
 
-		const products: ProductResponse = await response.json()
+		const products: ProductsResponse = await response.json()
 		return {
 			props: {
 				products: products.data,

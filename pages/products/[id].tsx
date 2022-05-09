@@ -1,6 +1,6 @@
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
 import { STRAPI_API } from './consts'
-import { ProductsResponse } from '../../src/components/stuff/product_response'
+import { ProductResponse } from '../../src/components/stuff/response'
 import Nav from '../../src/components/navigation/navigation'
 
 export default function Product({
@@ -32,7 +32,7 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
 	  
   }
 
-  const product: ProductsResponse = await response.json()
+  const product: ProductResponse = await response.json()
 
 	return {
 		props: {
