@@ -7,6 +7,8 @@
 @import "./faq/faq.css";
 @import "./products/product.css";
 @import "./homepage/layout.css";
+@import "./products/productId.css";
+@import "./login/login.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 

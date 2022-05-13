@@ -6,14 +6,15 @@ import Nav from '../../src/components/navigation/navigation'
 export default function Product({
 	product,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  return <div className=''>
-    
-	  <div className='#'>
-		  <h2 className='#'>{product.data.attributes.name}</h2>
+  return <div className='id_page_layout'>
+	  <div className='img_container'>
+		  
 	  </div>
-        
-    <footer>This is Foot</footer>
-   
+	  <div className='detials_container'>
+		  <h2 className='detials_title'>{product.data.attributes.name}</h2>
+		  <p>{product.data.attributes.price}</p>
+		  <p>{product.data.attributes.info}</p>
+	  </div>
   </div>
 }
 

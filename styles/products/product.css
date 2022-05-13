@@ -7,13 +7,11 @@
   min-height: 100vh;
   padding: 2rem;
 }
-
-
 .product_card {
 display: flex;
 flex-direction: column;
 }
-.text_container {
+.cards_inner {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -21,15 +19,15 @@ flex-direction: column;
     border-radius: 3px;
     max-width: 12rem;
     min-width: 12rem;
-    max-height: 8rem;
+    max-height: 5rem;
     padding: 1rem;
+    cursor: pointer;
 }
 .card_title {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: var(--secondary-color);
     border-bottom: 1px solid var(--main-color);
-    transform: rotateY(180deg);
-    
+    margin-top: 0px;
 }
 .card_title_flipped {
   font-size: 1rem;
@@ -40,13 +38,16 @@ flex-direction: column;
     margin: 0px;
     font-size: 1rem;
     color: var(--secondary-color);
-    transform: rotateY(180deg);
 }
 .card_dimensions_flipped {
   font-size: 1rem;
   color: var(--secondary-color);
   
 }
+.hidden {
+  display: none;
+}
+
 /* CARD STYLING*/
 
 
@@ -78,7 +79,7 @@ flex-direction: column;
 	transform: rotateY(180deg);
 }
 .card:hover, .card_title_flipped {
-	transform: rotateY(180deg);
+
 	transition-duration: 1s;
 }
 .card {

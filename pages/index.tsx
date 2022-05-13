@@ -37,6 +37,7 @@ export default function Home() {
 				<section id='forKlubber'>
 					<ClubSection />
 				</section>
+				<div className='bottom_layer'><button>Login</button></div>
 				<section>
 					<Footer />
 				</section>

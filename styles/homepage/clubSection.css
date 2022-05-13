@@ -28,6 +28,14 @@
   justify-content: center;
   min-height: 18.1rem;
 }
+.bottom_layer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 4rem;
+  background-color: var(--secondary-color);
+ 
+}
 @media (max-width: 767px) {
   .klubb_backgound_img {
     display: none;

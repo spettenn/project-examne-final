@@ -72,6 +72,7 @@ import { STRAPI_API } from './consts'
 import Link from "next/link"
 import Nav from '../../src/components/navigation/navigation';
 import Image from 'next/image';
+//import liveSearch from '../../src/components/products/liveSearch';
 
 export default function Home({
 	products,
@@ -82,28 +83,33 @@ export default function Home({
 			<div>
 				<h2>Hello there</h2>
 			</div>
-			
+			<div>
+			<input
+							type="search"
+							//onClick={() => liveSearch}
+					id="searchbox"
+					placeholder="Søk etter produkt"
+				/>
+				</div>
 			<div className='product_layout'>
 				{products.map((product) => {
 					return (
-						<div className='#' key={product.id}>
+						<div key={product.id}>
+						<div className='cards_inner' >
+							<Link href={`/products/${product.id}`}>
 							<section className='#'>
-							
-								<h3 className='card_title'>{product.attributes.name}</h3>
-								<p className='card_dimensions'>
-									{product.attributes.dimensjoner}
-								</p>
-								<Link href={`/products/${product.id}`}>
+								
 									<a className="#">
-                
-										<h3 className="#">
+										<h3 className="card_title">
 											{product.attributes.name}
 										</h3>
-										<p>{product.attributes.description}</p>
+										<p className='card_dimensions'>{product.attributes.dimensjoner}</p>
 									</a>
-								</Link>
+								
 							</section>
-						</div>
+							</Link>
+							</div>
+							</div>
 					)
 				})}
 			</div>
