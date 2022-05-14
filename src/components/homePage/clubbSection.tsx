@@ -4,41 +4,11 @@ import clubCarImageOne from '../../../public/localmedia/pakke.png';
 import clubCarImageTwo from '../../../public/localmedia/balkan.png';
 import YoutubeEmbed from '../../modules/youTubeModal.js';
 
-const clubCard = {
-	display: 'flex',
-	flexDirection: 'column',
-	maxWidth: '450px',
-	backgroundColor: 'transparent',
-	marginRight: '0.5rem',
-	marginLeft: '0.5rem',
-	padding: '1rem',
-	maxHeight: '32rem',
-	maxWidth: '450px',
-	marginBottom: '1rem',
-};
-const clubCardTitle = {
-	color: 'white',
-	fontSize: '2.1rem',
-	fontFamily: 'roboto',
-	textAlign: 'center',
-};
-const clubCardText = {
-	color: 'white',
-	fontSize: '1.2rem',
-	fontFamily: 'roboto',
-	textAlign: 'center',
-};
+
 const imageFit = {
 	maxHeight: '2rem',
 };
-const inforBtn = {
-	color: 'var(--main-color)',
-	fontSize: '1.5rem',
-	border: '1px solid',
-	backgroundColor: 'transparent',
-	borderRadius: '2px',
-	cursor: 'pointer',
-};
+
 
 const ClubSection = () => (
 	<div
@@ -85,7 +55,7 @@ const ClubSection = () => (
 				justifyContent: 'center',
 				margin: 'auto',
 			}}>
-			<div style={clubCard}>
+			<div className='club_card'>
 				<div
 					style={{
 						maxHeight: '20rem',
@@ -93,13 +63,13 @@ const ClubSection = () => (
 					<Image alt='club card' src={clubCarImageOne} />
 				</div>
 				<div>
-					<h3 style={clubCardTitle}>LG100/50 2 + 2 mål</h3>
-					<p style={clubCardText}>Kr. 5.800 inkl MVA og nøytrale nett</p>
+					<h3 className='club_card_title'>LG100/50 2 + 2 mål</h3>
+					<p className='club_card_text'>Kr. 5.800 inkl MVA og nøytrale nett</p>
 				</div>
-				<button style={inforBtn}>Mere information</button>
+				<button className='info_btn'>Mere information</button>
 			</div>
 			<div></div>
-			<div style={clubCard}>
+			<div className='club_card'>
 				<div
 					style={{
 						maxHeight: '20rem',
@@ -107,13 +77,14 @@ const ClubSection = () => (
 					<Image style={imageFit} alt='club card' src={clubCarImageTwo} />
 				</div>
 				<div>
-					<h3 style={clubCardTitle}>LG100 Pakke 8 mål</h3>
-					<p style={clubCardText}>Kr. 14.400 inkl MVA og Din Logo</p>
+					<h3 className='club_card_title'>LG100 Pakke 8 mål</h3>
+					<p className='club_card_text'>Kr. 14.400 inkl MVA og Din Logo</p>
 				</div>
-				<button style={inforBtn}>Mere information</button>
+				<button className='info_btn'>Mere information</button>
 			</div>
 		</div>
 		<YoutubeEmbed embedId='QbeZkLHfnJY' />
+		
 	</div>
 );
 
