@@ -15,7 +15,7 @@ export default function Product({
 		</div>
 		<div className='detials_layout_container'>
 		<div className='img_container'>
-		<Image src={product.data.attributes.image.data.attributes.url} width={400} height={400} alt="logo" />
+		<Image src={product.data.attributes.image.data.attributes.formats.thumbnail.url} width={400} height={400} alt="logo" />
 	  </div>
 	  <div className='detials_container'>
 		  <h2 className='detials_title'>{product.data.attributes.name}</h2>
