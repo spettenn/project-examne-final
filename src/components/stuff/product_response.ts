@@ -18,6 +18,7 @@ export interface DatumAttributes {
     info:        string;
     price:       string;
     dimensjoner: string;
+    detials:     string;
     image:       Image;
 }
 

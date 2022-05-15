@@ -1,21 +1,30 @@
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
 import { STRAPI_API } from './consts'
 import { ProductResponse } from '../../src/components/stuff/response'
+import logo from '../../public/localmedia/logo_dark.png'
 import Nav from '../../src/components/navigation/navigation'
+import Image from 'next/image'
 
 export default function Product({
 	product,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  return <div className='id_page_layout'>
-	  <div className='img_container'>
-		  
+	return <div className='id_page_layout'>
+		<div className='nav_details'>
+			<a className='tilbake_detials'>Tilbake</a>
+			<Image src={logo} width={400} height={100} alt="logo" />
+		</div>
+		<div className='detials_layout_container'>
+		<div className='img_container'>
+		<Image src={product.data.attributes.image.data.attributes.url} width={400} height={400} alt="logo" />
 	  </div>
 	  <div className='detials_container'>
 		  <h2 className='detials_title'>{product.data.attributes.name}</h2>
-		  <p>{product.data.attributes.price}</p>
-		  <p>{product.data.attributes.info}</p>
+		  <p>{product.data.attributes.price},- kr</p>
+		  <p>{product.data.attributes.detials}</p>
 	  </div>
   </div>
+		
+		</div>
 }
 
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
@@ -25,10 +34,10 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
     throw new Error('Id is undefined.')
   }
 
-  const response = await fetch(`${STRAPI_API}/api/products/${id}`)
+  const response = await fetch(`${STRAPI_API}/api/products/${id}/?populate=*`)
 
 	if (!response.ok) {
-	  console.log(`${STRAPI_API}/api/products/${id}`)
+	  console.log(`${STRAPI_API}/api/products/${id}/?populate=*`)
 	  throw new Error(await response.text())
 	  
   }

@@ -17,5 +17,8 @@ export default function Admin() {
         setJwt(jwt)
     }, [])
 
-    return <div>{jwt}</div>
+    return <div className='admin_layout'>
+        <div className='add_products_container'></div>
+        <div className='edit_products_contaienr'></div>
+    </div>
 }

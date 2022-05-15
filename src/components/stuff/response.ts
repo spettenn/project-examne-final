@@ -17,6 +17,7 @@ export interface PurpleAttributes {
   info:        string;
   price:       string;
   dimensjoner: string;
+  detials:     string;
   image:       Image;
 }
 

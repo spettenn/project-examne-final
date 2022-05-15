@@ -66,7 +66,9 @@ const ClubSection = () => (
 					<h3 className='club_card_title'>LG100/50 2 + 2 mål</h3>
 					<p className='club_card_text'>Kr. 5.800 inkl MVA og nøytrale nett</p>
 				</div>
-				<button className='info_btn'>Mere information</button>
+				<div>
+					<button className='info_btn'>Mere information</button>
+					</div>
 			</div>
 			<div></div>
 			<div className='club_card'>
@@ -80,7 +82,9 @@ const ClubSection = () => (
 					<h3 className='club_card_title'>LG100 Pakke 8 mål</h3>
 					<p className='club_card_text'>Kr. 14.400 inkl MVA og Din Logo</p>
 				</div>
-				<button className='info_btn'>Mere information</button>
+				<div>
+					<button className='info_btn'>Mere information</button>
+					</div>
 			</div>
 		</div>
 		<YoutubeEmbed embedId='QbeZkLHfnJY' />

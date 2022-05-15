@@ -1,0 +1,40 @@
+.id_page_layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.nav_details  {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+.tilbake_detials {
+    color: white;
+    background-color: var(--main-color);
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.detials_container {
+    width: 20rem;
+    height: 40rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0px 1px 5px 1px #000;
+}
+.detials_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--main-color);
+}
