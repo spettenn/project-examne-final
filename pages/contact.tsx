@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import AnImage from '../public/localmedia/footerImage.png';
+import Contactform from "../src/components/contact/contactForm";
 
 const contact_layout = {
 	minHeight: '100vh',
@@ -59,6 +60,7 @@ export default function Contact() {
 					</div>
 					<div className='contact_right_container'>
 						<h2 className='contact_title'>Kontakt oss</h2>
+						<Contactform />
 					</div>
 				</div>
 			</main>

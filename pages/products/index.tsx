@@ -34,11 +34,7 @@ export default function Home({
 	{product.attributes.dimensjoner}
     </div>
     <div className="back">
-	<h3 className="card_title">
-		{product.attributes.name}
-										</h3>
-										<p className='card_dimensions'>{product.attributes.dimensjoner}</p>
-
+	
     </div>
   </div>
   </a>

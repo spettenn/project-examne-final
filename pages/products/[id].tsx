@@ -4,24 +4,32 @@ import { ProductResponse } from '../../src/components/stuff/response'
 import logo from '../../public/localmedia/logo_dark.png'
 import Nav from '../../src/components/navigation/navigation'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Product({
 	product,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	return <div className='id_page_layout'>
 		<div className='nav_details'>
-			<a className='tilbake_detials'>Tilbake</a>
+			<Link href="/products">
+				<a className='tilbake_detials'>Tilbake</a>
+				</Link>
 			<Image src={logo} width={400} height={100} alt="logo" />
+			
 		</div>
 		<div className='detials_layout_container'>
 		<div className='img_container'>
 		<Image src={product.data.attributes.image.data.attributes.formats.thumbnail.url} width={400} height={400} alt="logo" />
-	  </div>
+			</div>
+			<div className='detials_outer_container'>
 	  <div className='detials_container'>
 		  <h2 className='detials_title'>{product.data.attributes.name}</h2>
-		  <p>{product.data.attributes.price},- kr</p>
+		  	<p>{product.data.attributes.price},- kr</p>
 				<p>{product.data.attributes.detials}</p>
-				<button
+				<p className='dimensjoner_detials'>{product.data.attributes.dimensjoner}</p>
+				
+			</div>
+			<button
                 className="snipcart-add-item"
                 data-item-id={product.data.id}
                 data-item-price={product.data.attributes.price}
@@ -29,10 +37,14 @@ export default function Product({
                 //data-item-image={product.image.url}
                 data-item-name={product.data.attributes.name}
               >
-                Add to Cart
-              </button>
-	  </div>
-  </div>
+                Legg til i kurv
+				</button>
+				</div>
+		</div>
+		<div className='detials_info_section'>
+			<h4 className='detials_info_title'>Litt mere informasjon om målet:</h4>
+		<p className='detials_info_text'>{product.data.attributes.info}</p>
+		</div>
 		</div>
 }
 
