@@ -12,14 +12,7 @@ const contact_layout = {
 	display: 'flex',
 	flexDirection: 'row',
 };
-const contact_left_container = {};
-const contact_form_container = {
-	width: '100%',
-};
-const contact_title = {
-	textAlign: 'center',
-	Color: 'white',
-};
+
 
 export default function Contact() {
 	return (
