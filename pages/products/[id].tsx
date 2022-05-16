@@ -20,10 +20,19 @@ export default function Product({
 	  <div className='detials_container'>
 		  <h2 className='detials_title'>{product.data.attributes.name}</h2>
 		  <p>{product.data.attributes.price},- kr</p>
-		  <p>{product.data.attributes.detials}</p>
+				<p>{product.data.attributes.detials}</p>
+				<button
+                className="snipcart-add-item"
+                data-item-id={product.data.id}
+                data-item-price={product.data.attributes.price}
+                data-item-url={`/products/${product.data.id}`}
+                //data-item-image={product.image.url}
+                data-item-name={product.data.attributes.name}
+              >
+                Add to Cart
+              </button>
 	  </div>
   </div>
-		
 		</div>
 }
 

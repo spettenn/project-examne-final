@@ -25,23 +25,25 @@ export default function Home({
 				</div>
 			<div className='product_layout'>
 				{products.map((product) => {
-					return (
-						<div key={product.id}>
-						<div className='cards_inner' >
-							<Link href={`/products/${product.id}`}>
-							<section className='#'>
-								
-									<a className="#">
-										<h3 className="card_title">
-											{product.attributes.name}
+					return (		
+	<div key={product.id} className="card">
+	<Link href={`/products/${product.id}`}><a>
+  <div className="content">
+    <div className="front">
+	{product.attributes.name}
+	{product.attributes.dimensjoner}
+    </div>
+    <div className="back">
+	<h3 className="card_title">
+		{product.attributes.name}
 										</h3>
 										<p className='card_dimensions'>{product.attributes.dimensjoner}</p>
-									</a>
-								
-							</section>
-							</Link>
-							</div>
-							</div>
+
+    </div>
+  </div>
+  </a>
+  </Link>
+</div>
 					)
 				})}
 			</div>

@@ -15,7 +15,8 @@ export default function Nav() {
 	};
 
 	return (
-		<section className='nav_section_container' style={{}}>
+		
+		<section className='nav_section_container'>
 			<div className='nav_container'>
 				<div className='navigation'>
 					<ul>
