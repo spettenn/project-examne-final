@@ -19,7 +19,7 @@ export default function Product({
 		</div>
 		<div className='detials_layout_container'>
 		<div className='img_container'>
-		<Image src={product.data.attributes.image.data.attributes.formats.thumbnail.url} width={400} height={400} alt="logo" />
+		<Image src={STRAPI_API + product.data.attributes.image.data.attributes.formats.thumbnail.url} width={400} height={400} alt="logo" />
 			</div>
 			<div className='detials_outer_container'>
 	  <div className='detials_container'>

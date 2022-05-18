@@ -54,13 +54,13 @@ export default function Contactform() {
             id="name"
             name="name"
             required
-            className="block"
+            className="contact_input"
           />
         </div>
-        <div className=''>
+        <div className='email_container'>
           <label htmlFor="email">Email</label>
           <input
-            className="block"
+            className="contact_input"
             value={formValues.email}
             onChange={(event) =>
               setFormValues((currentState) => ({
@@ -74,10 +74,10 @@ export default function Contactform() {
             required
           />
               </div>
-              <div className=''>
+              <div className='topic_container'>
           <label htmlFor="topic">Emne</label>
           <input
-            className="block"
+            className="contact_input"
             value={formValues.topic}
             onChange={(event) =>
               setFormValues((currentState) => ({
@@ -91,7 +91,7 @@ export default function Contactform() {
             required
           />
         </div>
-        <div className=''>
+        <div className='message_container'>
           <label className="block" htmlFor="message">
             Melding
           </label>
@@ -103,6 +103,7 @@ export default function Contactform() {
                 message: event.target.value,
               }))
             }
+            className="contact_textarea"
             id="message"
             name="message"
             required

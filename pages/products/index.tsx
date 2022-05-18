@@ -13,9 +13,6 @@ export default function Home({
 		<main>
 			<Nav />
 			<div>
-				<h2>Hello there</h2>
-			</div>
-			<div>
 			<input
 							type="search"
 							//onClick={() => liveSearch}
@@ -28,14 +25,9 @@ export default function Home({
 					return (		
 	<div key={product.id} className="card">
 	<Link href={`/products/${product.id}`}><a>
-  <div className="content">
-    <div className="front">
-	{product.attributes.name}
-	{product.attributes.dimensjoner}
-    </div>
-    <div className="back">
-	
-    </div>
+	<div key={product.id} className="wrap">
+    <div className="card back"><p>{product.attributes.name}</p></div>
+    <div className="card front"><p>{product.attributes.dimensjoner}</p></div>
   </div>
   </a>
   </Link>
@@ -62,13 +54,3 @@ export async function getStaticProps() {
 		}
 	}
 ;
-
-{/* 		<section className='back'>
-								<h3 className='card_title_flipped'>
-									{product.attributes.name}
-								</h3>
-								<p className='card_dimensions_flipped'>
-									{product.attributes.dimensjoner}
-								</p> */}
-							
-						{/* </section> */}
