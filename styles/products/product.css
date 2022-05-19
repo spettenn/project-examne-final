@@ -1,3 +1,6 @@
+.Products_page {
+  background-color: #ECECEC;
+}
 .product_layout {
   display: flex;
   flex-wrap: wrap;
@@ -7,6 +10,8 @@
   min-height: 100vh;
   padding: 2rem;
   width: 100%;
+  max-width: 65rem;
+  margin: auto;
 }
 .product_card {
 display: flex;
@@ -55,13 +60,14 @@ flex-direction: column;
   background-color: transparent;
   width: 300px;
   height: 300px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  margin: 2rem;
 }
-img{
+.card_image{
 	width: 300px;
 	height: 300px;
 }
-/* This container is needed to position the front and back side */
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -71,12 +77,10 @@ img{
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -84,57 +88,53 @@ img{
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
 }
-
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-
-/* .wrap {
-  position: relative;
-  width: 240px;
-  height: 360px;
-  margin: auto;
-}
-
-.card {
-  position: absolute;
-  width: 240px;
-  height: 360px;
-  color: #fff;
-  font-size: 32px;
-  font-family: sans-serif;
-  transition: .3s ease all;
-  backface-visibility: hidden;
-  display: flex;
-  box-shadow: 3px 3px 10px #333;
+.text_card_front {
+  background-color: white;
+  min-height: 5rem;
+  border: 1px solid var(--main-color);
   border-radius: 3px;
-  align-items: center;
-  justify-content: center;
 }
 
-.wrap:hover .front {
-  transform: rotateY(-180deg);
+.flip-card-back {
+  background-color: white;
+  color: var(--secondary-color);
+  transform: rotateY(180deg);
+  min-height: 23rem;
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+  padding: 1rem;
 }
-
-.wrap:hover .back {
-  transform: rotateY(0deg);
+.text_card_back_top {
+  border-bottom: solid 1px var(--main-color);
+  padding-bottom: 0.8rem;
 }
-
-.front {
-  background-color: #f00b9a;
-  transform: rotateY(0deg);
+.card_more_info {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.3rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
+#cart_button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.3rem;
+  width: 6rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom_card_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cart_card {
+  color: white;
 
-.back {
-  background-color: #00e1b5;
-  transform: rotateY(-180deg);
-} */
+}

@@ -5,6 +5,7 @@ export interface ProductsResponse {
 }
 
 export interface Datum {
+	data: any;
     id:         number;
     attributes: DatumAttributes;
 }
