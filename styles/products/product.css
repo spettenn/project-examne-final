@@ -121,12 +121,13 @@ flex-direction: column;
 #cart_button {
   background-color: var(--main-color);
   color: white;
-  padding: 0.3rem;
+  padding: 0.4rem;
   width: 6rem;
   font-size: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
 }
 .bottom_card_div {
   display: flex;
@@ -135,5 +136,9 @@ flex-direction: column;
 }
 .cart_card {
   color: white;
-
+  margin: auto ;
+}
+.card_title_flipped {
+margin-top: 0.2rem;
+font-size: 1.4rem;
 }

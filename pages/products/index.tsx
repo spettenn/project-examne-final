@@ -39,7 +39,7 @@ export default function Home({
 	  
     </div>
     <div className="flip-card-back">
-      <h1>{product.attributes.name}</h1> 
+      <h1 className='card_title_flipped'>{product.attributes.name}</h1> 
 										<p className='text_card_back_top'>{product.attributes.dimensjoner}</p>
 									<Link href={`/products/${product.id}`}><a className='card_more_info'>
 										Mere informasjon
