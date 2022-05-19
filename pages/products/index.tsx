@@ -23,11 +23,27 @@ export default function Home({
 			<div className='product_layout'>
 				{products.map((product) => {
 					return (		
-	<div key={product.id} className="card">
-	<Link href={`/products/${product.id}`}><a>
-	<div key={product.id} className="wrap">
-    <div className="card back"><p>{product.attributes.name}</p></div>
-    <div className="card front"><p>{product.attributes.dimensjoner}</p></div>
+// 	<div key={product.id} className="card">
+// 	<Link href={`/products/${product.id}`}><a>
+// 	<div key={product.id} className="wrap">
+//     <div className="card back"><p>{product.attributes.name}</p></div>
+//     <div className="card front"><p>{product.attributes.dimensjoner}</p></div>
+//   </div>
+//   </a>
+//   </Link>
+// </div>
+<div key={product.id} className="flip-card">
+<Link href={`/products/${product.id}`}><a>
+  <div className="flip-card-inner">
+    <div className="flip-card-front">
+    <Image src={STRAPI_API + product.data.attributes.image.data.attributes.url} width={400} height={400} className="" alt="product image" /> 
+	  <p>{product.attributes.name}</p>
+    </div>
+    <div className="flip-card-back">
+      <h1>John Doe</h1> 
+      <p>hello</p> 
+      <p>hello again</p>
+    </div>
   </div>
   </a>
   </Link>
@@ -38,6 +54,23 @@ export default function Home({
 		</main>
 	)
 };
+
+{/* <div key={product.id} className="flip-card">
+<Link href={`/products/${product.id}`}><a>
+  <div className="flip-card-inner">
+    <div className="flip-card-front">
+      <Image src="" className="" alt="">
+	  <p>{product.attributes.name}</p>
+    </div>
+    <div className="flip-card-back">
+      <h1>John Doe</h1> 
+      <p>hello</p> 
+      <p>hello again</p>
+    </div>
+  </div>
+  </a>
+  </Link>
+</div> */}
 
 export async function getStaticProps() {
 		const response = await fetch(`${STRAPI_API}/api/products?populate=*`)

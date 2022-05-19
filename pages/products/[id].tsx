@@ -19,15 +19,14 @@ export default function Product({
 		</div>
 		<div className='detials_layout_container'>
 		<div className='img_container'>
-		<Image src={STRAPI_API + product.data.attributes.image.data.attributes.formats.thumbnail.url} width={400} height={400} alt="logo" />
-			</div>
+		<Image src={STRAPI_API + product.data.attributes.image.data.attributes.url} width={400} height={400} alt="product card" />
+			</div> 
 			<div className='detials_outer_container'>
 	  <div className='detials_container'>
 		  <h2 className='detials_title'>{product.data.attributes.name}</h2>
 		  	<p>{product.data.attributes.price},- kr</p>
 				<p>{product.data.attributes.detials}</p>
 				<p className='dimensjoner_detials'>{product.data.attributes.dimensjoner}</p>
-				
 			</div>
 			<button
                 className="snipcart-add-item"
@@ -71,52 +70,3 @@ export async function getServerSideProps(ctx: GetServerSidePropsContext) {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-export default function Products({ product }) {
-	return (
-		<div>
-			<h1>{product.name}</h1>
-		</div>
-	);
-}
-
-export async function getStaticProps({ params }) {
-	const results = await fetch('http://localhost:1337/api/products/').then((r) =>
-		r.json()
-	);
-	return {
-		props: {
-			products: results[0],
-		},
-	};
-}
-
-export async function getStaticPaths() {
-	const products = await fetch('http://localhost:1337/api/products').then((r) =>
-		r.json()
-	);
-	return {
-		paths: products.map((product) => {
-			return {
-				params: {
-					id: product.id,
-				},
-			};
-		}),
-		fallback: false,
-	};
-}
-*/

@@ -67,9 +67,12 @@
     height: 1.4rem;
     border: 2px solid var(--main-color);
     border-radius: 3px;
-    margin: 0.5rem;
     padding: 0.5rem;
     font-size: 1.2rem;
+    margin: auto;
+}
+.label_form {
+    margin-left: 3rem;
 }
 .name_container {
     display: flex;
@@ -100,9 +103,9 @@
     height: 10rem;
     border: 2px solid var(--main-color);
     border-radius: 3px;
-    margin: 0.5rem;
     padding: 0.5rem;
     font-size: 1.2rem;
+    margin: auto;
 }
 .submit_btn {
     background-color: var(--main-color);
@@ -116,6 +119,7 @@
     border-radius: 3px;
     border: 2px solid var(--main-color);
     cursor: pointer;
+    margin-left: 3rem;
 }
 @media (max-width: 767px) {
     .contact_left_container {
@@ -123,5 +127,11 @@
     }
     .contact_right_container {
         width: 100%;
+    }
+    .label_form {
+        margin-left: 0.5rem;
+    }
+    .submit_btn {
+        margin-left: 0.5rem;
     }
 }

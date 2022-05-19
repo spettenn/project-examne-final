@@ -39,7 +39,7 @@ export default function Contactform() {
     <div className='contact_form_inner'>
       <form onSubmit={handleSubmit}>
         <div className='name_container'>
-          <label className="block" htmlFor="name">
+          <label className="label_form" htmlFor="name">
             Navn
           </label>
           <input
@@ -58,7 +58,7 @@ export default function Contactform() {
           />
         </div>
         <div className='email_container'>
-          <label htmlFor="email">Email</label>
+          <label className="label_form" htmlFor="email">Email</label>
           <input
             className="contact_input"
             value={formValues.email}
@@ -75,7 +75,7 @@ export default function Contactform() {
           />
               </div>
               <div className='topic_container'>
-          <label htmlFor="topic">Emne</label>
+          <label className='label_form' htmlFor="topic">Emne</label>
           <input
             className="contact_input"
             value={formValues.topic}
@@ -92,7 +92,7 @@ export default function Contactform() {
           />
         </div>
         <div className='message_container'>
-          <label className="block" htmlFor="message">
+          <label className='label_form' htmlFor="message">
             Melding
           </label>
           <textarea
