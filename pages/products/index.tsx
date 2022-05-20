@@ -33,8 +33,8 @@ export default function Home({
 	<Image src={STRAPI_API + product.attributes.image.data.attributes.url} width={400} height={400} className="card_image" alt="product image" />
 </div>
 		<div className='text_card_front'>
-		<p>{product.attributes.name}</p>
-		<p>{product.attributes.dimensjoner}</p>
+		<p className='product_card_name'>{product.attributes.name}</p>
+		<p className='product_card_dimensions'>{product.attributes.dimensjoner}</p>
 		</div>
 	  
     </div>
@@ -45,7 +45,7 @@ export default function Home({
 										Mere informasjon
 										</a>
   </Link>
-									<p className=''>{product.attributes.detials}</p>
+									<p className='product_card_img'>{product.attributes.detials}</p>
 									<div className='bottom_card_div'>
 									<p className=''>{product.attributes.price},- kr</p>
 									<button
