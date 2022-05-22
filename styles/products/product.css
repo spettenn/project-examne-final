@@ -158,3 +158,52 @@ font-size: 1.4rem;
 .product_card_img {
   text-align: left;
 }
+#cart_button_mobile  {
+  display: none;
+}
+.more_info_mobile {
+  display: none;
+}
+@media (max-width: 700px) {
+  .product_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    padding: 0%;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 260px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 3rem;
+  }
+  #cart_button_mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 3px;
+    height: 2rem;
+    padding: 0%;
+    padding-top: 0.2rem;
+    box-shadow: 0px 1px 3px 0px #464646;
+  }
+  .more_info_mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 3px;
+    height: 2rem;
+    padding: 0%;
+    padding-top: 0.2rem;
+    box-shadow: 0px 1px 3px 0px #464646;
+  }
+}

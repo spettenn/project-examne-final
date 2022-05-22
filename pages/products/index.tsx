@@ -34,8 +34,24 @@ export default function Home({
 </div>
 		<div className='text_card_front'>
 		<p className='product_card_name'>{product.attributes.name}</p>
-		<p className='product_card_dimensions'>{product.attributes.dimensjoner}</p>
-		</div>
+										<p className='product_card_dimensions'>{product.attributes.dimensjoner}</p>
+										<Link href={`/products/${product.id}`}><a className='more_info_mobile'>
+										Mere informasjon
+										</a>
+											</Link>
+										<button
+											className="snipcart-add-item"
+											id='cart_button_mobile'
+                data-item-id={product.id}
+                data-item-price={product.attributes.price}
+                data-item-url={`/products/${product.id}`}
+                data-item-image={STRAPI_API + product.attributes.image.data.attributes.url}
+                data-item-name={product.attributes.name}
+										>
+											Legg til
+										</button>
+									</div>
+									
 	  
     </div>
     <div className="flip-card-back">
@@ -66,11 +82,13 @@ export default function Home({
 										</div>
     </div>
   </div>
-  
-</div>
+						</div>
+						
 					)
 				})}
-			</div>
+				
+				</div>
+				
 		</main>
 	)
 };

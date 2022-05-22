@@ -10,13 +10,14 @@ export default function Product({
 	product,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	return <div className='id_page_layout'>
-		<div className='nav_details'>
+		{/* <div className='nav_details'>
 			<Link href="/products">
 				<a className='tilbake_detials'>Tilbake</a>
 				</Link>
 			<Image src={logo} width={400} height={100} alt="logo" />
 			
-		</div>
+		</div> */}
+		<Nav />
 		<div className='detials_layout_container'>
 		<div className='img_container'>
 		<Image src={STRAPI_API + product.data.attributes.image.data.attributes.url} width={400} height={400} alt="product card" />
