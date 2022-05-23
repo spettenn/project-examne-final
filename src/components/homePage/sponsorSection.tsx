@@ -39,7 +39,9 @@ const SponsorSection = () => (
 					paddingLeft: '2rem',
 					paddingRight: '2rem',
 				}}>
-				Mere information
+				<a href="./faq">
+					Mere information
+					</a>
 			</button>
 		</div>
 	</div>

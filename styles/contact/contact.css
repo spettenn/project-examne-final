@@ -49,6 +49,10 @@
     background-color: transparent;
     color: white;
 }
+.tilbake_mobile{
+    display: none;
+}
+
 .contact_image_container {
     padding: 1rem;
 }
@@ -121,6 +125,12 @@
     cursor: pointer;
     margin-left: 3rem;
 }
+.form_top{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
 @media (max-width: 767px) {
     .contact_left_container {
         display: none;
@@ -133,5 +143,21 @@
     }
     .submit_btn {
         margin-left: 0.5rem;
+    }
+    .tilbake_mobile{
+        background-color: var(--main-color);
+    color: white;
+    font-size: 1rem;
+    margin: 1rem;
+    height: fit-content;
+    width: 5rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 2px solid var(--main-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     }
 }

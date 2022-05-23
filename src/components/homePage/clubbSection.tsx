@@ -54,6 +54,7 @@ const ClubSection = () => (
 				flexWrap: 'wrap',
 				justifyContent: 'center',
 				margin: 'auto',
+				marginBottom: '1rem',
 			}}>
 			<div className='club_card'>
 				<div
@@ -66,7 +67,7 @@ const ClubSection = () => (
 					<h3 className='club_card_title'>LG100/50 2 + 2 mål</h3>
 					<p className='club_card_text'>Kr. 5.800 inkl MVA og nøytrale nett</p>
 				</div>
-				<div>
+				<div className='club_card_btn'>
 					<button className='info_btn'>Mere information</button>
 					</div>
 			</div>
@@ -82,7 +83,7 @@ const ClubSection = () => (
 					<h3 className='club_card_title'>LG100 Pakke 8 mål</h3>
 					<p className='club_card_text'>Kr. 14.400 inkl MVA og Din Logo</p>
 				</div>
-				<div>
+				<div className='club_card_btn'>
 					<button className='info_btn'>Mere information</button>
 					</div>
 			</div>

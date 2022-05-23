@@ -45,7 +45,15 @@ export default function Contact() {
 						</p>
 					</div>
 					<div className='contact_right_container'>
-						<h2 className='contact_title'>Kontakt oss</h2>
+						<div className='form_top'>
+					<Link href='/'>
+							<a className='tilbake_mobile'>
+								<FontAwesomeIcon className='tilbake_icon' icon={faArrowLeft} />
+								Tilbake
+							</a>
+						</Link>
+							<h2 className='contact_title'>Kontakt oss</h2>
+							</div>
 						<Contactform />
 					</div>
 				</div>
