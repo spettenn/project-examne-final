@@ -1,6 +1,6 @@
 import Hamburger from '../navigation/burger.js';
 import { useState } from 'react';
-import logo from '../../../public/localmedia/LogoNav.png';
+import logo from '../../../public/localmedia/logo_dark-removebg.png';
 import Image from 'next/image';
 import ActiveLink from '../navigation/activeLink';
 
@@ -42,7 +42,14 @@ export default function Nav() {
 					</div>
 				</div>
 				<div className='logo_nav_container'>
-					<Image className='logo_nav' src={logo} href='/index' alt='logo' />
+					<Image
+						className='logo_nav'
+						src={logo}
+						height={50}
+						width={200}
+						href='/index'
+						alt='logo'
+					/>
 				</div>
 
 				<style jsx>{`

@@ -14,7 +14,7 @@
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	z-index: 1000;
+	z-index: 10;
 	transition: all 0.3s linear;
 	padding-top: 0.5rem;
 }
@@ -36,7 +36,7 @@
 	display: flex;
 	justify-content: space-around;
 	flex-flow: column nowrap;
-	z-index: 1000;
+	z-index: 10;
 	box-sizing: border-box;
 }
 .burger {
@@ -46,12 +46,12 @@
 	background-color: var(--secondary-color);
 	transform-origin: 1px;
 	transition: all 0.3s linear;
-	z-index: 100
+	z-index: 10
 }
 .nav_section_container {
 	display: flex;
 	justify-content: center;
-	background-color: #ECECEC;
+	background-color: transparent;
 }
 .nav_container {
 	min-width: 50rem;
