@@ -168,18 +168,22 @@ font-size: 1.4rem;
   .product_layout {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 100vh;
     height: fit-content;
     width: 100%;
     padding: 0%;
+  }
+  snipcart-modal__close-icon snipcart__icon {
+    z-index: 1000;
   }
   .flip-card {
     background-color: transparent;
     width: 260px;
     height: 400px;
     perspective: 1000px;
-    margin: 3rem;
+    margin: auto;
+    margin-bottom: 4rem;
   }
   #cart_button_mobile {
     display: flex;
