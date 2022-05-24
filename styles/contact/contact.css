@@ -20,11 +20,17 @@
     background-color: var(--secondary-color);
     width: 50%;
     box-shadow: -7px 0px 10px 5px #000;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .contact_form_container {
     width: 50%;
     min-height: 100vh;
     background-color: var(--secondary-color);
+}
+.outer_form_container { 
+    max-width: 30rem;
+    margin: auto;
 }
 .tilbake {
     background-color: var(--main-color);
@@ -67,17 +73,14 @@
     font-size: 2rem;
 }
 .contact_input {
-    width: 80%;
+    width: 88%;
     height: 1.4rem;
     border: 2px solid var(--main-color);
     border-radius: 3px;
     padding: 0.5rem;
     font-size: 1.2rem;
-    margin: auto;
 }
-.label_form {
-    margin-left: 3rem;
-}
+
 .name_container {
     display: flex;
     flex-direction: column;
@@ -103,19 +106,18 @@
     font-size: 1.2rem;
 }
 .contact_textarea {
-    width: 80%;
+    width: 88%;
     height: 10rem;
     border: 2px solid var(--main-color);
     border-radius: 3px;
     padding: 0.5rem;
     font-size: 1.2rem;
-    margin: auto;
 }
 .submit_btn {
     background-color: var(--main-color);
     color: white;
     font-size: 1.2rem;
-    margin: 1rem;
+    margin-top: 1rem;
     height: fit-content;
     width: 15rem;
     text-align: center;
@@ -123,7 +125,6 @@
     border-radius: 3px;
     border: 2px solid var(--main-color);
     cursor: pointer;
-    margin-left: 3rem;
 }
 .form_top{ 
     display: flex;

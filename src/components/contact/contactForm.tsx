@@ -36,6 +36,7 @@ export default function Contactform() {
   }
 
   return (
+    <div className="outer_form_container">
     <div className='contact_form_inner'>
       <form onSubmit={handleSubmit}>
         <div className='name_container'>
@@ -116,6 +117,7 @@ export default function Contactform() {
         <button className='submit_btn'>Send melding</button>
         </div>
       </form>
-    </div>
+      </div>
+      </div>
   )
 }

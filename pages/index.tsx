@@ -8,6 +8,7 @@ import ClubSection from '../src/components/homePage/clubbSection';
 import Nav from '../src/components/navigation/navigation';
 import Banner from '../src/components/homePage/homepageBanner';
 import Footer from '../src/components/footer/footer';
+import BottomNav from '../src/components/homePage/bottomNav';
 
 
 const sectionPadding = {
@@ -23,7 +24,7 @@ export default function Home() {
 			</Head>
 			<main className="homepage_layout">
 				<Nav />
-				<section className='banner'>
+				<section id="top" className='banner'>
 					<Banner />
 				</section>
 				<section style={sectionPadding}>
@@ -35,9 +36,13 @@ export default function Home() {
 				<section id='forKlubber'>
 					<ClubSection />
 				</section>
+			
+					<BottomNav />
+					
 				<section>
 					<Footer />
 				</section>
+				
 			</main>
 		</div>
 	);

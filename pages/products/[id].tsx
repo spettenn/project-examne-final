@@ -10,17 +10,10 @@ export default function Product({
 	product,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	return <div className='id_page_layout'>
-		{/* <div className='nav_details'>
-			<Link href="/products">
-				<a className='tilbake_detials'>Tilbake</a>
-				</Link>
-			<Image src={logo} width={400} height={100} alt="logo" />
-			
-		</div> */}
 		<Nav />
 		<div className='detials_layout_container'>
 		<div className='img_container'>
-		<Image src={STRAPI_API + product.data.attributes.image.data.attributes.url} width={400} height={400} alt="product card" />
+		<Image className='product_img' src={STRAPI_API + product.data.attributes.image.data.attributes.url} width={400} height={400} alt="product card" />
 			</div> 
 			<div className='detials_outer_container'>
 	  <div className='detials_container'>
@@ -34,7 +27,7 @@ export default function Product({
                 data-item-id={product.data.id}
                 data-item-price={product.data.attributes.price}
                 data-item-url={`/products/${product.data.id}`}
-                //data-item-image={product.image.url}
+                data-item-image={STRAPI_API + product.data.attributes.image.data.attributes.url}
                 data-item-name={product.data.attributes.name}
               >
                 Legg til i kurv
