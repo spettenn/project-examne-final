@@ -173,23 +173,6 @@
 		font-size: 1.3rem;
 		font-weight: lighter;
 	}
-	.mobile__banner__btn {
-		z-index: 7;
-		text-align: center;
-		font-size: 1.5rem;
-		background-color: var(--main-color);
-		width: 80%;
-		opacity: 100%;
-		text-decoration: none;
-		color: white;
-		cursor: pointer;
-		margin: auto;
-		border: 1px solid var(--main-color);
-		border-radius: 1px;
-	}
-	.mobile__banner__btn:hover {
-		color: white;
-		background-color: transparent;
-		border: 1px solid var(--main-color);
-	}
+	
+	
 }

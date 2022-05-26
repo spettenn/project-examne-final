@@ -36,9 +36,7 @@ export default function Home() {
 				<section id='forKlubber'>
 					<ClubSection />
 				</section>
-			
 					<BottomNav />
-					
 				<section>
 					<Footer />
 				</section>

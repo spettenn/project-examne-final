@@ -161,4 +161,7 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     }
+    .form_top {
+        justify-content: space-between;
+    }
 }
