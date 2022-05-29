@@ -55,7 +55,26 @@ flex-direction: column;
   display: none;
 }
 
-/* CARD STYLING*/
+/* Input Search*/
+.searchbox_container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin: auto;
+  max-width: 70rem;
+}
+.searchbox_products {
+  background-color: white;
+  border: 1px solid var(--main-color);
+  border-radius: 2px;
+  padding: 0.2rem;
+  width: 12rem;
+  height: 2rem;
+  padding-left: 0.8rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+}
+/* Card Styling*/
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -104,10 +123,11 @@ flex-direction: column;
   background-color: white;
   color: var(--secondary-color);
   transform: rotateY(180deg);
-  min-height: 23rem;
+  min-height: 21rem;
   border: 1px solid var(--main-color);
   border-radius: 3px;
   padding: 1rem;
+  margin-top: 1.4rem;
 }
 .text_card_back_top {
   border-bottom: solid 1px var(--main-color);
@@ -210,4 +230,8 @@ font-size: 1.4rem;
     padding-top: 0.2rem;
     box-shadow: 0px 1px 3px 0px #464646;
   }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(0deg);
+  }
+  
 }

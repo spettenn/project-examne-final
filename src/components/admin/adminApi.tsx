@@ -15,26 +15,24 @@ export default function Home({
   messages,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div className="">
-      <div className="">
+    <>
         <header>
         
         </header>
-      </div>
 
-      <div className="">
-        <main className="">
+
+        <main>
           {messages.data.map(message => {
             return (
-              <div className=""  key={message.id}>
-                <span className="">New message from: {message.attributes.name}</span>
+              <div key={message.id}>
+                <span >New message from: {message.attributes.name}</span>
                 <p>{message.attributes.message}</p>
               </div>
             )
           })}
         </main>
-      </div>
-    </div>
+      </>
+
   )
 }
 
