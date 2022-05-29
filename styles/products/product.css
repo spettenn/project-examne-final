@@ -1,5 +1,7 @@
 .Products_page {
   background-color: #ECECEC;
+  min-height: 100vh;
+  height: fit-content;
 }
 .product_layout {
   display: flex;

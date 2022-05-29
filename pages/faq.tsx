@@ -33,7 +33,7 @@ export default function Faq() {
 			
 			<main className='faq_layout'>
 			<Nav />
-				<h1 className='faq_title'>Sponsor</h1>
+				<h1 className='faq_title_top'>Sponsor</h1>
 				<div className='sponsor_text'>
 					<p>
 						<p className='faq_text_weight'>Norges største lagidrett!</p>
