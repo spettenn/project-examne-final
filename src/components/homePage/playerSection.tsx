@@ -9,27 +9,8 @@ import {
 	faMobileScreenButton,
 } from '@fortawesome/free-solid-svg-icons';
 
-const cardContainer = {
-	display: 'flex',
-	flexDirection: 'row',
-	flexWrap: 'wrap',
-	justifyContent: 'center',
-};
-const cardHome = {
-	maxWidth: '450px',
-	maxHeight: '35rem',
-	display: 'flex',
-	flexDirection: 'column',
-	backgroundColor: 'white',
-	boxShadow: '1px 3px 2px 0px rgba(183,199,75,0.75)',
-	border: '1px solid #8C8C8C',
-	borderRadius: '3px',
-	padding: '1rem',
-	margin: 'auto',
-	marginRight: '0.5rem',
-	marginLeft: '0.5rem',
-	marginBottom: '1rem',
-};
+
+
 const cardNett = {
 	maxWidth: '51.8rem',
 	display: 'flex',
@@ -63,12 +44,7 @@ const goalSpec = {
 	fontWeight: 'light',
 	marginLeft: '5%',
 };
-const titles = {
-	fontSize: '36px',
-	color: '#2F4858',
-	textAlign: 'center',
-	margin: '0%',
-};
+
 
 const PlayerSection = () => (
 	<div
@@ -85,12 +61,12 @@ const PlayerSection = () => (
 			style={{
 				height: '4rem',
 			}}>
-			<h2 style={titles}>For Spillere</h2>
+			<h2 className='player_section_title'>For Spillere</h2>
 		</div>
-		<div style={cardContainer}>
-			<div style={cardHome}>
+		<div className='card_container_player'>
+			<div className='main_card'>
 				<Image src={cardImageOne} alt='garde goal, fotball goal medium size' />
-				<h3 style={titles}>LG50 “Hagemålet”</h3>
+				<h3 className='player_section_title'>LG50 “Hagemålet”</h3>
 				<p style={cardText}>
 					Det perfekte fotballmålet for de som elsker å spille fotball!
 					Funtoplay LG50 Original er et norsk designet produkt som passer
@@ -107,14 +83,14 @@ const PlayerSection = () => (
 					<buttin style={cardButton}>cart</buttin>
 				</div>
 			</div>
-			<div style={cardHome}>
+			<div className='main_card'>
 				<Image
 					src={cardImageTwo}
 					className='card_image_home'
 					alt='garde goal, fotball goal large size'
 				/>
 
-				<h3 style={titles}>LG100</h3>
+				<h3 className='player_section_title'>LG100</h3>
 				<p style={cardText}>
 					Det perfekte fotballmålet for de som elsker å spille fotball!
 					Funtoplay LG100 Original er et norsk designet produkt som passer
@@ -137,7 +113,7 @@ const PlayerSection = () => (
 				<Image src={cardImageThree} alt='fotball nets / fotball nett' />
 			</div>
 			<div style={{ width: '50%' }}>
-				<h3 style={titles}>Nett</h3>
+				<h3 className='player_section_title'>Nett</h3>
 				<p>
 					På tide å bytte nett? Vi tilbyr nett i ulike farger med eller uten
 					logo

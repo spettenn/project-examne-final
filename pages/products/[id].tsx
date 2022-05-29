@@ -1,6 +1,6 @@
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
 import { STRAPI_API } from './consts'
-import { ProductResponse } from '../../src/components/stuff/response'
+import { ProductResponse } from '../../interface/product_response'
 import logo from '../../public/localmedia/logo_dark.png'
 import Nav from '../../src/components/navigation/navigation'
 import Image from 'next/image'

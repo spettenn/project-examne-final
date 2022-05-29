@@ -1,6 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
 import Head from 'next/head';
-import { ProductsResponse } from '../../src/components/stuff/product_response'
+import { ProductsResponse } from '../../interface/products_response'
 import { STRAPI_API } from './consts'
 import Link from "next/link"
 import Nav from '../../src/components/navigation/navigation';
@@ -8,6 +8,7 @@ import Image from 'next/image';
 import {liveSearch} from '../../src/components/products/liveSearch';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../../src/components/footer/footer';
 
 export default function Home({
 	products,
@@ -97,6 +98,7 @@ export default function Home({
 				</div>
 				
 			</main>
+<Footer />
 			</>
 	)
 };
