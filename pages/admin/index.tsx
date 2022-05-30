@@ -91,11 +91,11 @@ export default function Admin( {
     
   return <div className='admin_layout'>
     <div className='admin_header'>
-    <Link href={`/`}>
+    {/* <Link href={`/`}>
        <button className='logout logout-btn' onClick={ () => {
             sessionStorage.removeItem("jwt")
             window.location.replace("/")}}>Logout</button>
-       </Link>
+       </Link> */}
     </div>
     <div className='admin_style'>
         <div className='add_products_container'>
