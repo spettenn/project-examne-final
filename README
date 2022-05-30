@@ -1,20 +1,16 @@
-import { getMaxListeners } from "process"
 
-strapi info:
-localhost:1337
+// username: test@admin.com
+// password: test132
 
-username: test@admin.com
-password: test132
+// another strapi login:
+// username: aleksadnerspetalen @
+// password: TesterTest123
 
-another strapi login:
-username: aleksadnerspetalen @
-password: TesterTest123
+// strapi auth user login:
+// username: admin;
+// password: test1234;
 
-strapi auth user login:
-username: admin;
-password: test1234;
-
-code for searchbar (it works, but having major issues when deploying it to netlify):
+// code for searchbar (it works, but having major issues when deploying it to netlify):
 
 // import React, { useRef } from "react";
 

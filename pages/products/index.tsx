@@ -105,11 +105,6 @@ export default function ProductPage({
 };
 
 export async function getServerSideProps(ctx: GetServerSidePropsContext) {
-	const id = ctx.params?.id as string
-
-	if (!id) {
-	  throw new Error('Id is undefined.')
-	}
 		const response = await fetch(`${STRAPI_API}/api/products?populate=*`)
 
 		if (!response.ok) {
