@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react'
-import { STRAPI_API } from "../products/consts";
+import { STRAPI_API } from "../../consts";
 import router from 'next/router';
 import Image from 'next/image';
 import loginImage from "../../public/localmedia/login_img.png";

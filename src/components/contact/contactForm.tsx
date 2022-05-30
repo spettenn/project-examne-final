@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react'
-import { STRAPI_API } from '../../../pages/products/consts'
+import { STRAPI_API } from '../../../consts'
 
 const INITIAL_VALUES = {
 name: '',

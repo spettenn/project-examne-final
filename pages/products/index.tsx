@@ -1,7 +1,7 @@
 import type { InferGetStaticPropsType } from 'next'
 import Head from 'next/head';
 import { ProductsResponse } from '../../interface/products_response'
-import { STRAPI_API } from './consts'
+import { STRAPI_API } from '../../consts'
 import Link from "next/link"
 import Nav from '../../src/components/navigation/navigation';
 import Image from 'next/image';

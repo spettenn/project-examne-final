@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { STRAPI_API } from '../products/consts'
+import { STRAPI_API } from '../../consts'
 import Link from "next/link"
 import type { InferGetStaticPropsType } from 'next'
 import  { ProductsResponse }  from '../../interface/products_response'
