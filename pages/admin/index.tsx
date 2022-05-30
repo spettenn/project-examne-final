@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { STRAPI_API } from '../../consts'
 import Link from "next/link"
-import type { InferGetStaticPropsType } from 'next'
+//import type { InferGetStaticPropsType } from 'next'
 import  { ProductsResponse }  from '../../interface/products_response'
 import React from 'react';
 import { useForm } from 'react-hook-form'
+import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
 
 interface FormValues {
     name: string
@@ -21,7 +22,7 @@ interface FormValues {
 
 export default function Admin( {
     products,
-  }: InferGetStaticPropsType<typeof getStaticProps>) {
+  }: InferGetServerSidePropsType<typeof getServerSideProps>) {
 
     const [jwt, setJwt] = useState('')
     const router = useRouter()
@@ -177,7 +178,12 @@ export default function Admin( {
 }
 
 
-export async function getStaticProps() {
+export async function getServerSideProps(ctx: GetServerSidePropsContext) {
+  const id = ctx.params?.id as string
+
+  if (!id) {
+    throw new Error('Id is undefined.')
+  }
     const response = await fetch(`${STRAPI_API}/api/products?populate=*`)
   
     if (!response.ok) {

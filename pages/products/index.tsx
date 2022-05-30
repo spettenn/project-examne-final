@@ -1,4 +1,4 @@
-import type { InferGetStaticPropsType } from 'next'
+//import type { InferGetStaticPropsType } from 'next'
 import Head from 'next/head';
 import { ProductsResponse } from '../../interface/products_response'
 import { STRAPI_API } from '../../consts'
