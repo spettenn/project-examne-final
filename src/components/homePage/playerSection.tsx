@@ -1,4 +1,4 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
+//import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import cardImageOne from '../../../public/localmedia/LG50.jpg';

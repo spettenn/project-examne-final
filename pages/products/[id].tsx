@@ -1,10 +1,9 @@
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
 import { STRAPI_API } from './consts'
 import { ProductResponse } from '../../interface/product_response'
-import logo from '../../public/localmedia/logo_dark.png'
 import Nav from '../../src/components/navigation/navigation'
 import Image from 'next/image'
-import Link from 'next/link'
+
 
 export default function Product({
 	product,

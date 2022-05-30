@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import react from 'react';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import SponsorSection from '../src/components/homePage/sponsorSection';
 import PlayerSection from '../src/components/homePage/playerSection';
