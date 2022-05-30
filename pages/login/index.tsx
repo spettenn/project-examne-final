@@ -1,8 +1,8 @@
 import { useState, FormEvent } from 'react'
-import { STRAPI_API } from "../pages/products/consts";
+import { STRAPI_API } from "../products/consts";
 import router from 'next/router';
 import Image from 'next/image';
-import loginImage from "../public/localmedia/login_img.png";
+import loginImage from "../../public/localmedia/login_img.png";
 
 
 const INITIAL_STATE = {
@@ -80,3 +80,4 @@ export default function Login() {
       </div>
   )
 }
+

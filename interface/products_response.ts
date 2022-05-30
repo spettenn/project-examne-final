@@ -24,10 +24,12 @@ export interface DatumAttributes {
 }
 
 export interface Image {
+	url: string;
     data: Data;
 }
 
 export interface Data {
+	url: string;
     id:         number;
     attributes: DataAttributes;
 }

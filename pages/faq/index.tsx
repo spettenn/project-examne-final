@@ -1,27 +1,10 @@
 import Head from 'next/head';
-import Nav from '../src/components/navigation/navigation';
+import Nav from '../../src/components/navigation/navigation';
+import Footer from '../../src/components/footer/footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 
-function readMore() {
-	const dots = document.getElementById('dots');
-	let moreText = document.getElementById('more');
-	const btnOne = document.getElementById('btn_returrett');
-	const btnTwo = document.getElementById('btn_salg');
-
-	if (dots.style.display === 'none') {
-		dots.style.display = 'inline';
-		btnOne.innerHTML = 'Les mere';
-		btnTwo.innerHTML = 'les mere';
-		moreText.style.display = 'none';
-	} else {
-		dots.style.display = 'none';
-		btnOne.innerHTML = 'Les mindre';
-		btnTwo.innerHTML = 'Les mindre';
-		moreText.style.display = 'inline';
-	}
-}
 
 export default function Faq() {
 	return (
@@ -138,7 +121,7 @@ export default function Faq() {
 						</p>
 					</div>
 				</div>
-				<div className='terms_container'>
+				{/* <div className='terms_container'>
 					<div className='terms_inner_container'>
 						<p>
 							Returrett - 30 dagers full returett <span id='dots'>...</span>
@@ -150,7 +133,7 @@ export default function Faq() {
 								påtrykket logo eller annen illustrasjon som ikke føres som
 								lagervare.
 							</span>
-							<button onClick={readMore} id='btn_returrett'>
+							<button id='btn_returrett'>
 								Les mere
 							</button>
 						</p>
@@ -199,13 +182,14 @@ export default function Faq() {
 								avtaler, skal utgjøre grunn til at Selger løses fra denne
 								avtalen.
 							</span>
-							<button onClick={readMore} id='btn_salg'>
+							<button id='btn_salg'>
 								Les mere
 							</button>
 						</p>
 					</div>
-				</div>
+				</div> */}
 			</main>
+				<Footer />
 		</div>
 	);
 }

@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import AnImage from '../public/localmedia/footerImage.png';
-import Contactform from "../src/components/contact/contactForm";
+import AnImage from '../../public/localmedia/footerImage.png';
+import Contactform from "../../src/components/contact/contactForm";
 
 
 

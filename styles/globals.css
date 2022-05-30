@@ -9,7 +9,7 @@
 @import "./homepage/layout.css";
 @import "./products/productId.css";
 @import "./login/login.css";
-@import "./login/admin.css";
+@import "./admin/admin.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 

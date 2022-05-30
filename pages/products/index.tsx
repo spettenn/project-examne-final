@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../../src/components/footer/footer';
 
-export default function Home({
+export default function ProductPage({
 	products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (

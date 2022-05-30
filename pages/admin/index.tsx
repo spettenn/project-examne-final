@@ -1,10 +1,10 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { STRAPI_API } from './products/consts'
+import { STRAPI_API } from '../products/consts'
 import Link from "next/link"
 import type { InferGetStaticPropsType } from 'next'
-import  { ProductsResponse }  from '../interface/products_response'
+import  { ProductsResponse }  from '../../interface/products_response'
 import React from 'react';
 import { useForm } from 'react-hook-form'
 
@@ -89,30 +89,44 @@ export default function Admin( {
     }
     
     
-    return <div className='admin_layout'>
+  return <div className='admin_layout'>
+    <div className='admin_header'>
+    <Link href={`/`}>
+       <button className='logout logout-btn' onClick={ () => {
+            sessionStorage.removeItem("jwt")
+            window.location.replace("/")}}>Logout</button>
+       </Link>
+    </div>
+    <div className='admin_style'>
         <div className='add_products_container'>
 
-        <form onSubmit={form.handleSubmit(onSubmit)}>
-            <h2 className="">Add products to API</h2>
+        <form className="form_add" onSubmit={form.handleSubmit(onSubmit)}>
+            <h2 className="admin_title">Add products to API</h2>
             <div>
-              <label htmlFor="title">Title</label>
-              <input type="text" {...form.register('name')} required />
+            <label htmlFor="title">Title</label>
+            <br />
+              <input className="input_field_admin" type="text" {...form.register('name')} required />
             </div>
             <div>
-              <label htmlFor="description">Description</label>
-              <input type="text" {...form.register('description')} required/>
+            <label htmlFor="description">Description</label>
+            <br />
+              <input className="input_field_admin" type="text" {...form.register('description')} required/>
             </div>
             <div>
-              <label htmlFor="info">Info</label>
-              <input type="text" {...form.register('info')} required/>
+            <label htmlFor="info">Info</label>
+            <br />
+              <input className="input_field_admin" type="text" {...form.register('info')} required/>
             </div>
             <div>
-              <label htmlFor="price">Price</label>
-              <input type="text" {...form.register('price')} required/>
+            <label htmlFor="price">Price</label>
+            <br />
+              <input className="input_field_admin" type="text" {...form.register('price')} required/>
             </div>
             <div>
-              <label htmlFor="dimensjoner">Dimensjoner</label>
-              <input
+            <label htmlFor="dimensjoner">Dimensjoner</label>
+            <br />
+            <input
+              className="input_field_admin"
                 type="text"
                 multiple
                 {...form.register('dimensjoner')}
@@ -120,27 +134,28 @@ export default function Admin( {
               />
             </div>
             <div>
-              <label htmlFor="detials">Detials</label>
-              <input type="text" {...form.register('detials')} />
+            <label htmlFor="detials">Detials</label>
+            <br />
+            <input
+              className="input_field_admin"type="text" {...form.register('detials')} />
             </div>
             
 
-            <button type="submit" className='submit-btn'>Submit</button>
+            <button type="submit" className='submit_btn_admin'>Submit</button>
           </form>
 
         </div>
         <div className='edit_products_contaienr'>
-        <div className="">
+        <div className="edit_products_inner">
           {products.map((product) => {
      
             return (
-              <div key={product.id}>
+              <div className='product_delete' key={product.id}>
               <Link  href={`/products/${product.id}`}>
                 <a className="">
-                
                 <h3 className="">
                   {product.attributes.name}
-                </h3>
+                    </h3>
                 </a>
               </Link>
                 <button onClick={() => {
@@ -157,6 +172,7 @@ export default function Admin( {
           })}
         </div>
         </div>
+    </div>
     </div>
 }
 

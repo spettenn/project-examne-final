@@ -1,0 +1,88 @@
+.admin_title {
+    color: white;
+    text-align: center;
+}
+.form_add {
+    height: 35rem;
+    width: 25rem;
+    display: flex  ;
+    flex-direction: column;
+    color: white;
+}
+.add_products_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-color);
+    max-width: 30rem;
+    min-width: 30rem;
+    min-height: 40rem;
+    max-height: 40rem;
+    margin: auto;
+}
+.edit_products_contaienr {
+    display: flex;
+    max-width: 30rem;
+    min-width: 30rem;
+    min-height: 40rem;
+    max-height: 40rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-color);
+    margin: auto;
+}
+.admin_layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+.admin_style {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input_field_admin {
+    width: 90%;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    
+}
+.submit_btn_admin {
+width: 93%;
+background-color: var(--main-color);
+border: 1 solid var(--main-color);
+border-radius: 2px;
+color: white;
+}
+.product_delete {
+    display: flex  ;
+    flex-direction: row;
+    height: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 0.8rem;
+}
+.edit_products_inner {
+    height: 35rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.admin_header {
+    width: 80%;
+    margin: auto;
+    height: 4rem;
+    padding: 0%;
+    margin:auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
