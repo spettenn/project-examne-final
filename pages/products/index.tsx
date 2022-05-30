@@ -1,4 +1,4 @@
-import type { InferGetStaticPropsType } from 'next'
+//import type { InferGetStaticPropsType } from 'next'
 import Head from 'next/head';
 import { ProductsResponse } from '../../interface/products_response'
 import { STRAPI_API } from '../../consts'
@@ -9,11 +9,11 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../../src/components/footer/footer';
-
+import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
 
 export default function ProductPage({
 	products,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	return (
 		<>
 		<Head>
@@ -104,8 +104,12 @@ export default function ProductPage({
 	)
 };
 
-export async function getStaticProps() {
-	
+export async function getServerSideProps(ctx: GetServerSidePropsContext) {
+	const id = ctx.params?.id as string
+
+	if (!id) {
+	  throw new Error('Id is undefined.')
+	}
 		const response = await fetch(`${STRAPI_API}/api/products?populate=*`)
 
 		if (!response.ok) {
