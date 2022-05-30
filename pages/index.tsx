@@ -11,10 +11,6 @@ import Footer from '../src/components/footer/footer';
 import BottomNav from '../src/components/homePage/bottomNav';
 
 
-const sectionPadding = {
-	margin: 'auto',
-};
-
 export default function Home() {
 	return (
 		<div className={styles.container}>
@@ -27,10 +23,10 @@ export default function Home() {
 				<section id="top" className='banner'>
 					<Banner />
 				</section>
-				<section style={sectionPadding}>
+				<section className='section_padding'>
 					<SponsorSection />
 				</section>
-				<section id='forSpillere' style={sectionPadding}>
+				<section id='forSpillere' className='section_padding'>
 					<PlayerSection />
 				</section>
 				<section id='forKlubber'>

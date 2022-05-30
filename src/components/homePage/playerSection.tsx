@@ -10,42 +10,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 
-
-const cardNett = {
-	maxWidth: '51.8rem',
-	display: 'flex',
-	flexDirection: 'row',
-	flexWrap: 'wrap',
-	backgroundColor: 'white',
-	boxShadow: '1px 3px 2px 0px rgba(183,199,75,0.75)',
-	border: '1px solid #8C8C8C',
-	borderRadius: '3px',
-	padding: '30px',
-	margin: 'auto',
-	marginTop: '0rem',
-};
-const cardButton = {
-	color: '#70BF48',
-	backgroundColor: 'white',
-	textAlign: 'center',
-	cursor: 'pointer',
-	border: '1px solid #70BF48',
-	minWidth: '50px',
-	borderRadius: '2px',
-	padding: '5px',
-	fontSize: '1.1rem',
-};
-const cardText = {
-	fontSize: '1.2rem',
-};
-const goalSpec = {
-	color: '#595252',
-	fontSize: '1.5rem',
-	fontWeight: 'light',
-	marginLeft: '5%',
-};
-
-
 const PlayerSection = () => (
 	<div
 		style={{
@@ -67,20 +31,20 @@ const PlayerSection = () => (
 			<div className='main_card'>
 				<Image src={cardImageOne} alt='garde goal, fotball goal medium size' />
 				<h3 className='player_section_title'>LG50 “Hagemålet”</h3>
-				<p style={cardText}>
+				<p className='player_card_text'>
 					Det perfekte fotballmålet for de som elsker å spille fotball!
 					Funtoplay LG50 Original er et norsk designet produkt som passer
 					perfekt for fotballspill i hagen, på løkka, eller på treningsfeltet
 					for de yngste.
 				</p>
-				<p style={goalSpec}>B x H= 120 x 75 cm </p>
+				<p className='player_card_spec'>B x H= 120 x 75 cm </p>
 				<div
 					style={{
 						display: 'flex',
 						justifyContent: 'space-between',
 					}}>
-					<button style={cardButton}>Mere information</button>
-					<buttin style={cardButton}>cart</buttin>
+					<button className='player_card_btn'>Mere information</button>
+					<button className='player_card_btn'>cart</button>
 				</div>
 			</div>
 			<div className='main_card'>
@@ -91,24 +55,24 @@ const PlayerSection = () => (
 				/>
 
 				<h3 className='player_section_title'>LG100</h3>
-				<p style={cardText}>
+				<p className='player_card_text'>
 					Det perfekte fotballmålet for de som elsker å spille fotball!
 					Funtoplay LG100 Original er et norsk designet produkt som passer
 					perfekt til fotballklubber som ønsker å benytte seg av
 					småmål/småspill.
 				</p>
-				<p style={goalSpec}>B x H= 150 x 95 cm</p>
+				<p className='player_card_spec'>B x H= 150 x 95 cm</p>
 				<div
 					style={{
 						display: 'flex',
 						justifyContent: 'space-between',
 					}}>
-					<button style={cardButton}>Mere information</button>
-					<buttin style={cardButton}>cart</buttin>
+					<button className='player_card_btn'>Mere information</button>
+					<button className='player_card_btn'>cart</button>
 				</div>
 			</div>
 		</div>
-		<div style={cardNett}>
+		<div className='player_card_net'>
 			<div style={{ width: '50%' }}>
 				<Image src={cardImageThree} alt='fotball nets / fotball nett' />
 			</div>

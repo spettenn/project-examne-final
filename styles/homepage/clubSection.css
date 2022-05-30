@@ -113,6 +113,9 @@
   border: 2px solid white;
   color: white;
 }
+.img_club {
+  max-height: 2rem;
+}
 @media (max-width: 767px) {
   .klubb_backgound_img {
     display: none;

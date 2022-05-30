@@ -5,11 +5,6 @@ import clubCarImageTwo from '../../../public/localmedia/balkan.png';
 import YoutubeEmbed from '../../modules/youTubeModal.js';
 
 
-const imageFit = {
-	maxHeight: '2rem',
-};
-
-
 const ClubSection = () => (
 	<div
 		className='klubb_section'
@@ -77,7 +72,7 @@ const ClubSection = () => (
 					style={{
 						maxHeight: '20rem',
 					}}>
-					<Image style={imageFit} alt='club card' src={clubCarImageTwo} />
+					<Image className='img_club' alt='club card' src={clubCarImageTwo} />
 				</div>
 				<div>
 					<h3 className='club_card_title'>LG100 Pakke 8 mål</h3>
