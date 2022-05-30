@@ -1,4 +1,4 @@
-export default function Hamburger({ isOpen }) {
+const Hamburger = ({ isOpen }) => {
 	return (
 		<>
 			<div className='hamburger'>
@@ -21,4 +21,5 @@ export default function Hamburger({ isOpen }) {
 			`}</style>
 		</>
 	);
-}
+};
+export default Hamburger;

@@ -8,7 +8,7 @@ topic: '',
 message: '',
 }
 
-export default function Contactform() {
+const Contactform = () => {
   const [formValues, setFormValues] = useState(INITIAL_VALUES)
   const [message, setMessage] = useState('')
 
@@ -121,3 +121,4 @@ export default function Contactform() {
       </div>
   )
 }
+export default Contactform;

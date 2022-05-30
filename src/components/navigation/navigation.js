@@ -4,7 +4,7 @@ import logo from '../../../public/localmedia/logo_dark-removebg.png';
 import Image from 'next/image';
 import ActiveLink from '../navigation/activeLink';
 
-export default function Nav() {
+const Nav = () => {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
 	const toggleHamburger = () => {
@@ -107,4 +107,5 @@ export default function Nav() {
 			</div>
 		</section>
 	);
-}
+};
+export default Nav;
