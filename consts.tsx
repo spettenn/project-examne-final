@@ -1,1 +1,1 @@
-export const STRAPI_API = process.env.STRAPI_API || "https://project-examne-strapi.herokuapp.com"
+export const STRAPI_API = process.env.STRAPI_API || "https://git.heroku.com/project-examne-strapi.git"
