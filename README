@@ -10,8 +10,9 @@ another strapi login:
 username: aleksadnerspetalen @
 password: TesterTest123
 
-strapi login:
-username:
+strapi auth user login:
+username: admin;
+password: test1234;
 
 code for searchbar (it works, but having major issues when deploying it to netlify):
 
