@@ -1,8 +1,17 @@
+import { getMaxListeners } from "process"
+
 strapi info:
 localhost:1337
 
 username: test@admin.com
 password: test132
+
+another strapi login:
+username: aleksadnerspetalen @
+password: TesterTest123
+
+strapi login:
+username:
 
 code for searchbar (it works, but having major issues when deploying it to netlify):
 
