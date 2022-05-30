@@ -5,7 +5,7 @@ import { STRAPI_API } from './consts'
 import Link from "next/link"
 import Nav from '../../src/components/navigation/navigation';
 import Image from 'next/image';
-import {liveSearch} from '../../src/components/products/liveSearch';
+//import {liveSearch} from '../../src/components/products/liveSearch';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../../src/components/footer/footer';
@@ -24,7 +24,7 @@ export default function ProductPage({
 			<div className='searchbox_container'>
 			<input
 							type="search"
-							onChange={(e) => liveSearch(e)}
+							//onChange={(e) => liveSearch(e)}
 					id="searchbox"
 					placeholder="Søk etter produkt"
 					className="searchbox_products"
