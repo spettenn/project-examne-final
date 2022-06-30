@@ -2,6 +2,6 @@
 module.exports = {
 	reactStrictMode: true,
 	images: {
-		domains: ['localhost'],
+		domains: ['localhost', 'https://project-examne-strapi.herokuapp.com'],
 	},
 };
