@@ -30,9 +30,9 @@ export default function Home() {
 				</section>
 				<section id='forKlubber'>
 					<ClubSection />
-				</section>
+				{/* </section>
 					<BottomNav />
-				<section>
+				<section> */}
 					<Footer />
 				</section>
 				
